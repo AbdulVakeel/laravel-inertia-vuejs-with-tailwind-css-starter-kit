@@ -18,7 +18,7 @@
 <p>install yarn</p>
 <p>yarn dev</p>
 <p>php artisan serve</p>
-
+<p>registration for first user admin</p>
 
 
 
