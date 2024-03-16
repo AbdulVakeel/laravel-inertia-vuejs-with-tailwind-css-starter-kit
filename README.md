@@ -26,7 +26,7 @@
 <img src="https://skycodelab.io//git/staff.png" width="400" alt="image admin staff">
 <img src="https://skycodelab.io//git/profile.png" width="400" alt="imageprofile">
 <img src="https://skycodelab.io//git/login.png" width="400" alt="image login">
-
+<img src="https://skycodelab.io//git/signup.png" width="400" alt="image signup">
 
 ## About Laravel
 
