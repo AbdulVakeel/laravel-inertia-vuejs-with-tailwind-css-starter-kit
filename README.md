@@ -14,10 +14,10 @@
 <p>🤡inertiajs/vue3 v 1.0.0</p>
 
 <p align="center">
-<img src="https://skycodelab.io//assets/images/frontend/brands/65d2d54516ec61708315973.svg" width="100" alt="image laravel">
-<img src="https://skycodelab.io//assets/images/frontend/brands/65ab92795f3221705742969.png" width="100" alt="image vue js ">
-<img src="https://skycodelab.io/assets/images/frontend/brands/65ab92bc32af01705743036.png" width="100" alt="image inertia">
-<img src="https://skycodelab.io/assets/images/frontend/brands/65ac7406dee911705800710.png" width="100" alt="image tailwind css">
+<img src="https://laravel.com/img/logotype.min.svg" width="100" alt="image laravel">
+<img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="100" alt="image vue js ">
+<img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="100" alt="image inertia">
+<img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="100" alt="image tailwind css">
 
 </p>
 
