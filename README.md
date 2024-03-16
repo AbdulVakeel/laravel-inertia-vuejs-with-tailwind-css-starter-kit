@@ -1,10 +1,10 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg"  width="100" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework"  width="100" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework"  width="100" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework"  width="100" alt="License"></a>
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg"   alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework"   alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework"  alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework"   alt="License"></a>
 </p>
 
 <p align="center"><a href="https://skycodelab.io" target="_blank"><img src="https://skycodelab.io//uploads/site/logo.png" width="400" alt="Sky Code Lab Logo"></a></p>
@@ -24,10 +24,10 @@
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="center">
-<img src="https://skycodelab.io//assets/images/frontend/brands/65d2d54516ec61708315973.svg" width="200" alt="image laravel">
-<img src="https://skycodelab.io//assets/images/frontend/brands/65ab92795f3221705742969.png" width="200" alt="image vue js ">
-<img src="https://skycodelab.io/assets/images/frontend/brands/65ab92bc32af01705743036.png" width="400" alt="image inertia">
-<img src="https://skycodelab.io/assets/images/frontend/brands/65ac7406dee911705800710.png" width="400" alt="image tailwind css">
+<img src="https://skycodelab.io//assets/images/frontend/brands/65d2d54516ec61708315973.svg" width="100" alt="image laravel">
+<img src="https://skycodelab.io//assets/images/frontend/brands/65ab92795f3221705742969.png" width="100" alt="image vue js ">
+<img src="https://skycodelab.io/assets/images/frontend/brands/65ab92bc32af01705743036.png" width="100" alt="image inertia">
+<img src="https://skycodelab.io/assets/images/frontend/brands/65ac7406dee911705800710.png" width="100" alt="image tailwind css">
 
 </p>
 
