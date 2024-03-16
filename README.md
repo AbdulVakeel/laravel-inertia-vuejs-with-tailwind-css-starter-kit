@@ -9,6 +9,9 @@
 
 <p align="center"><a href="https://skycodelab.io" target="_blank"><img src="https://skycodelab.io//uploads/site/logo.png" width="400" alt="Sky Code Lab Logo"></a>🫸🫷</p>
 
+<p>☺️ Latest Laravel v 10.45</p>
+<p>😘Vuejs v 3.4.0 </p>
+<p>🤡inertiajs/vue3 v 1.0.0</p>
 
 <p align="center">
 <img src="https://skycodelab.io//assets/images/frontend/brands/65d2d54516ec61708315973.svg" width="100" alt="image laravel">
@@ -18,9 +21,6 @@
 
 </p>
 
-<p>- ☺️ Latest Laravel v 10.45r</p>
-<p>- 😘Vuejs v 3.4.0 </p>
-<p>- 🤡inertiajs/vue3 v 1.0.0</p>
 
 <p>- 👉 install composer</p>
 <p>- 👉 php artisan key:generate </p>
