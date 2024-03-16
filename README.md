@@ -21,7 +21,7 @@
 <p>php artisan serve</p>
 <p>registration for first user admin</p>
 
-<img src="uploads/site/admindashbord.png)" width="400" alt="image admin dashboard">
+<img src="uploads/site/admindashbord.png" width="400" alt="image admin dashboard">
 
 
 ## About Laravel
