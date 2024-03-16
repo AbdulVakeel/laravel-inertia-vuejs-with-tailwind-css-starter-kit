@@ -29,7 +29,6 @@
 <p>- 👉 update db name db username db password </p>
 <p>- 👉 php artisan key:generate </p>
 <p>- 👉 php artisan migrate --seed</p>
-<p>- 👉 npm install</p>
 <p>- 👉 yarn install</p>
 <p>- 👉 yarn dev</p>
 <p>- 👉 php artisan serve</p>
