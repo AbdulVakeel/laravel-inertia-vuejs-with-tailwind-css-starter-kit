@@ -18,29 +18,6 @@
 
 </p>
 
-<table>
-<thead>
-<tr>
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<p>- 💬 install composer</p>
-<p>- 💬 php artisan key:generate </p>
-<p> - 💬create a db [db name db username db password] </p>
-<p> - 💬copy .env.example </p>
-<p> - 💬rename .env </p>
-<p>- 💬 update db name db username db password </p>
-<p>- 💬 php artisan migrate --seed</p>
-<p>- 💬npm install</p>
-<p>- 💬 yarn install</p>
-<p>- 💬yarn dev</p>
-<p>- 💬php artisan serve</p>
-<p>- 💬registration for first user admin</p>
-</tr>
-</tbody>
-</table>
 
 <p>- 💬 install composer</p>
 <p>- 💬 php artisan key:generate </p>
