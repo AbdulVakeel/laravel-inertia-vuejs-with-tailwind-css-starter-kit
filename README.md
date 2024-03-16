@@ -89,8 +89,8 @@
 <table>
 <thead>
 <tr>
-<th align="center">🙂Mobile</th>
-<th align="center">🙃Sidebar</th>
+<th align="center">🙂Mobile Responsive</th>
+<th align="center">🙃User And Admin Sidebar</th>
 </tr>
 </thead>
 <tbody>
