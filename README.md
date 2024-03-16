@@ -18,6 +18,23 @@
 
 </p>
 
+<table>
+<thead>
+<tr>
+<th align="center">starter kit laravel installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><p>- 💬 install composer</p></td>
+<td align="center"><p>- 💬 php artisan key:generate </p></td>
+  <td align="center"><p> - 💬create a db [db name db username db password] </p></td>
+  <td align="center"><p>- 💬 php artisan key:generate </p></td>
+  <td align="center"><p> - 💬copy .env.example </p></td>
+</tr>
+</tbody>
+</table>
+
 <p>- 💬 install composer</p>
 <p>- 💬 php artisan key:generate </p>
 <p> - 💬create a db [db name db username db password] </p>
