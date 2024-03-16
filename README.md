@@ -10,17 +10,17 @@
 <p align="center"><a href="https://skycodelab.io" target="_blank"><img src="https://skycodelab.io//uploads/site/logo.png" width="400" alt="Sky Code Lab Logo"></a></p>
 
 
-<p> install composer</p>
-<p> php artisan key:generate </p>
-<p> create a db [db name db username db password] </p>
-<p> copy .env.example </p>
-<p> rename .env </p>
-<p> update db name db username db password </p>
-<p> php artisan migrate --seed</p>
-<p>install yarn</p>
-<p>yarn dev</p>
-<p>php artisan serve</p>
-<p>registration for first user admin</p>
+<p>- 💬 install composer</p>
+<p>- 💬 php artisan key:generate </p>
+<p> - 💬create a db [db name db username db password] </p>
+<p> - 💬copy .env.example </p>
+<p> - 💬rename .env </p>
+<p>- 💬 update db name db username db password </p>
+<p>- 💬 php artisan migrate --seed</p>
+<p>- 💬install yarn</p>
+<p>- 💬yarn dev</p>
+<p>- 💬php artisan serve</p>
+<p>- 💬registration for first user admin</p>
 
 <p align="center">
 <img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
