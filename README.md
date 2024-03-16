@@ -21,7 +21,7 @@
 <p>php artisan serve</p>
 <p>registration for first user admin</p>
 
-<img src="[uploads/site/admindashbord.png](https://skycodelab.io//git/admindashbord.png)" width="400" alt="image admin dashboard">
+<img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
 
 
 ## About Laravel
