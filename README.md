@@ -82,6 +82,21 @@
 </tbody>
 </table>
 
+
+<table>
+<thead>
+<tr>
+<th align="center">🫶🏽Mobile</th>
+<th align="center">🙌🏽Sidebar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="https://skycodelab.io//git/mobile.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.io//git/side.png" alt="" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
