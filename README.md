@@ -33,7 +33,20 @@
 <p>- 💬php artisan serve</p>
 <p>- 💬registration for first user admin</p>
 
-
+<table>
+<thead>
+<tr>
+<th align="center">Admin Dashboard</th>
+<th align="center">Staff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="https://skycodelab.io//git/admindashbord.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.io//git/staff.png" alt="" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
           
 <p align="center">
 <img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
