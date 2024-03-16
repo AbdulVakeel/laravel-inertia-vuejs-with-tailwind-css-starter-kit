@@ -38,7 +38,6 @@ const showPasswordTextconfirmation = ref(false);
   File Name: register
   
   ----------------------------------------------------------------------------------------
-  Item Name: Sky Matrix  
   Author: Sky Code Lab
   Author URL: https://www.skycodelab.io/
 ==========================================================================================*/
