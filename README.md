@@ -7,6 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<p align="center"><a href="[https://skycodelab.io](https://skycodelab.io/)" target="_blank"><img src="[https://skycodelab.io//uploads/site/logo.png](https://skycodelab.io//uploads/site/logo.png)" width="400" alt="Laravel Logo"></a></p>
 
 <p> install composer</p>
 <p> php artisan key:generate </p>
@@ -20,6 +21,7 @@
 <p>php artisan serve</p>
 <p>registration for first user admin</p>
 
+<img src="uploads/site/admindashbord.png)" width="400" alt="image admin dashboard">
 
 
 ## About Laravel
