@@ -47,12 +47,26 @@
 </tr>
 </tbody>
 </table>
-          
+
+
+          <table>
+<thead>
+<tr>
+<th align="center">Profile</th>
+<th align="center">Login</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src=""https://skycodelab.io//git/profile.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="[https://skycodelab.io//git/staff.png](https://skycodelab.io//git/login.png)" alt="" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+
 <p align="center">
-<img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
-<img src="https://skycodelab.io//git/staff.png" width="400" alt="image admin staff">
-<img src="https://skycodelab.io//git/profile.png" width="400" alt="imageprofile">
-<img src="https://skycodelab.io//git/login.png" width="400" alt="image login">
+
+
 <img src="https://skycodelab.io//git/signup.png" width="400" alt="image signup">
   <img src="https://skycodelab.io//git/roll.png" width="400" alt="image roll">
 </p>
