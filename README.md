@@ -86,8 +86,8 @@
 <table>
 <thead>
 <tr>
-<th align="center">🫶🏽Mobile</th>
-<th align="center">🙌🏽Sidebar</th>
+<th align="center">🙂Mobile</th>
+<th align="center">🙃Sidebar</th>
 </tr>
 </thead>
 <tbody>
