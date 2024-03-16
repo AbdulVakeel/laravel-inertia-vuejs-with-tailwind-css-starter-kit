@@ -10,7 +10,7 @@
 
 <p> install composer</p>
 <p> php artisan key:generate </p>
-<p> create a db [de name de username de password] </p>
+<p> create a db [db name db username db password] </p>
 <p> copy .env.example </p>
 <p> rename .env </p>
 <p> update db name db username db password </p>
