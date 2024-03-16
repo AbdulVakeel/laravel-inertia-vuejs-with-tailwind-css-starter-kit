@@ -1,5 +1,4 @@
 <script setup>
-import { paymentManualGatewayStore } from '@/Stores/paymentManualGatewayStore.js';
 
 const { item, show, maxWidth, closeable } = defineProps({
 	item: [Array, Object],
