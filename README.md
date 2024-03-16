@@ -31,6 +31,7 @@
 <p>- 💬yarn dev</p>
 <p>- 💬php artisan serve</p>
 <p>- 💬registration for first user admin</p>
+<p>- 💬clear a cache hit this one http://127.0.0.1:8000/clear</p>
 
 <p align="center">
 <a href="https://www.buymeacoffee.com/abdulvakeel" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> </p>
