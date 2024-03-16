@@ -28,7 +28,8 @@
 <p> - 💬rename .env </p>
 <p>- 💬 update db name db username db password </p>
 <p>- 💬 php artisan migrate --seed</p>
-<p>- 💬install yarn</p>
+<p>- 💬npm install</p>
+<p>- 💬 yarn install</p>
 <p>- 💬yarn dev</p>
 <p>- 💬php artisan serve</p>
 <p>- 💬registration for first user admin</p>
