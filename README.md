@@ -22,6 +22,16 @@
 <p>- 💬php artisan serve</p>
 <p>- 💬registration for first user admin</p>
 
+<h3 align="left">Languages and Tools:</h3>
+<p align="center">
+<img src="https://skycodelab.io//assets/images/frontend/brands/65d2d54516ec61708315973.svg" width="200" alt="image laravel">
+<img src="https://skycodelab.io//assets/images/frontend/brands/65ab92795f3221705742969.png" width="200" alt="image vue js ">
+<img src="https://skycodelab.io/assets/images/frontend/brands/65ab92bc32af01705743036.png" width="400" alt="image inertia">
+<img src="https://skycodelab.io/assets/images/frontend/brands/65ac7406dee911705800710.png" width="400" alt="image tailwind css">
+
+</p>
+
+          
 <p align="center">
 <img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
 <img src="https://skycodelab.io//git/staff.png" width="400" alt="image admin staff">
