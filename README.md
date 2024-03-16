@@ -39,8 +39,8 @@
 <table>
 <thead>
 <tr>
-<th align="center">Admin Dashboard</th>
-<th align="center">Staff</th>
+<th align="center">Admin 🫸🏻🫷🏻 Dashboard</th>
+<th align="center">👇🏻 Staff</th>
 </tr>
 </thead>
 <tbody>
@@ -54,8 +54,8 @@
 <table>
 <thead>
 <tr>
-<th align="center">Profile</th>
-<th align="center">Login</th>
+<th align="center">🤶🏼Profile</th>
+<th align="center">🤹🏼Login</th>
 </tr>
 </thead>
 <tbody>
@@ -70,8 +70,8 @@
 <table>
 <thead>
 <tr>
-<th align="center">Signup</th>
-<th align="center">Roll</th>
+<th align="center">🫶🏽Signup</th>
+<th align="center">🙌🏽Roll</th>
 </tr>
 </thead>
 <tbody>
