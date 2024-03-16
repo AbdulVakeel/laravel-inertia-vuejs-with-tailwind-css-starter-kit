@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.container {
+		@apply max-w-7xl mx-auto sm:px-6 lg:px-8;
+	}
+	.btn {
+		@apply py-1.5 px-4 inline-flex items-center justify-center font-semibold border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-75 transition-all duration-300 disabled:opacity-25;
+	}
+	.btn-sm {
+		@apply p-1.5 text-sm;
+	}
+	.btn-xs {
+		@apply p-1 m-0 text-xs;
+	}
+	.btn-primary {
+		@apply bg-primary text-secondary-darker border-primary hover:bg-primary-dark rounded-lg focus:ring-primary active:bg-primary;
+	}
+
+	.btn-outline-primary {
+		@apply bg-transparent text-primary border border-primary rounded-lg hover:bg-primary hover:text-white;
+	}
+
+	.btn-secondary {
+		@apply bg-secondary text-white hover:bg-gray-700 focus:bg-secondary active:bg-secondary border-secondary;
+	}
+	.btn-outline-secondary {
+		@apply bg-transparent  text-secondary border border-secondary rounded-lg hover:bg-secondary hover:text-white;
+	}
+	.btn-success {
+		@apply bg-lime-600 text-white hover:bg-lime-700 focus:ring-lime-400 active:bg-lime-600 rounded-lg;
+	}
+
+	.btn-info {
+		@apply bg-info-light text-info-darker focus:ring-info-light active:bg-info-light rounded-lg;
+	}
+
+	.btn-outline-success {
+		@apply bg-transparent text-lime-700 border border-lime-700 rounded-lg hover:bg-lime-700 hover:text-lime-100;
+	}
+	.btn-danger {
+		@apply bg-danger text-white hover:bg-danger-dark focus:ring-danger active:bg-danger rounded-lg;
+	}
+	.btn-outline-danger {
+		@apply bg-transparent  text-danger border border-danger rounded-lg hover:bg-danger hover:text-white hover:shadow-2xl;
+	}
+	.btn-success {
+		@apply bg-lime-500 text-white hover:bg-lime-600 focus:ring-lime-400 active:bg-lime-500;
+	}
+	.btn-outline-success {
+		@apply bg-transparent py-1.5 text-lime-700 border border-lime-700 rounded-lg hover:bg-lime-700 hover:text-lime-100 hover:shadow-2xl;
+	}
+	.btn-light {
+		@apply bg-secondary-light/5 text-secondary dark:text-secondary-light hover:text-primary dark:hover:text-primary  rounded-lg  active:border-none focus:border-none dark:bg-secondary;
+	}
+	.btn-link {
+		@apply bg-transparent text-primary dark:text-primary hover:bg-primary-dark/10  rounded-lg  active:border-none focus:border-none focus:ring-0;
+	}
+	.bg-light {
+		@apply bg-white dark:bg-secondary-dark;
+	}
+	.bg-dark {
+		@apply dark:bg-secondary-darker bg-secondary-lighter;
+	}
+	.text-light {
+		@apply text-secondary dark:text-secondary-light;
+	}
+	.text-dark {
+		@apply dark:text-white text-secondary-dark;
+	}
+	.t-head {
+		@apply px-2 py-1 border-b-2 border-gray-200 bg-gray-100 text-center font-semibold text-gray-700 text-base;
+	}
+	.td {
+		@apply text-sm py-2 px-4 text-gray-500;
+	}
+	.table-cell {
+		@apply text-sm px-3 py-2 text-center;
+	}
+	.form-input {
+		@apply text-sm md:text-base p-2 border-gray-300 focus:border-primary/80 focus:ring focus:ring-primary/20 focus:ring-opacity-50 rounded-lg shadow-sm disabled:bg-gray-50 disabled:text-gray-500 disabled:border-gray-200 disabled:shadow-none placeholder:text-gray-400
+		dark:border-gray-700/90 dark:focus:border-primary/80 dark:focus:ring dark:focus:ring-primary/20 dark:focus:ring-opacity-50 dark:shadow-sm  dark:disabled:text-gray-500  dark:disabled:shadow-none dark:placeholder:text-gray-600 dark:bg-secondary-dark dark:disabled:bg-secondary dark:rounded-lg dark:disabled:border-secondary-darker;
+	}
+	.form-select {
+		@apply p-2 pr-5 border-gray-300 focus:border-primary/80 focus:ring focus:ring-primary/20 focus:ring-opacity-50 rounded-lg shadow-sm disabled:bg-gray-50 disabled:text-gray-500 disabled:border-gray-200 disabled:shadow-none placeholder:text-gray-400
+		dark:border-gray-700/90 dark:focus:border-primary/80 dark:focus:ring dark:focus:ring-primary/20 dark:focus:ring-opacity-50 dark:shadow-sm dark:disabled:bg-gray-50 dark:disabled:text-gray-500 dark:disabled:border-gray-200 dark:disabled:shadow-none dark:placeholder:text-gray-400 dark:bg-secondary-dark dark:rounded-lg;
+	}
+
+}
+
+:root {
+	--blue: #48a9f8;
+}
+
+.btn-spinner,
+.btn-spinner:after {
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+}
+.btn-spinner {
+	font-size: 10px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 0.2em solid white;
+	border-right: 0.2em solid white;
+	border-bottom: 0.2em solid white;
+	border-left: 0.2em solid transparent;
+	transform: trangrayZ(0);
+	animation: spinning 1s infinite linear;
+}
+@keyframes spinning {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 0.4em;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	margin-top: 7rem;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #fda92d;
+}
+
+.form-scrollbar::-webkit-scrollbar {
+	width: 0.3em;
+}
+.form-scrollbar::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+
+.form-scrollbar::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid graygrey;
+	border-radius: 20px;
+	background-color: #d1d5db;
+}
+
+@media print {
+	body * {
+		visibility: hidden;
+	}
+	.printable,
+	.printable * {
+		visibility: visible;
+		/* display: block !important; */
+	}
+	.printable {
+		position: absolute;
+		left: 0;
+		top: 0;
+		overflow: visible;
+		/* margin: 50px; */
+	}
+	.print-none {
+		display: none;
+	}
+}
+
+
+/* V multi select */
+.multiselect__tags {
+	@apply p-2 pr-5 border-gray-300 focus:border-primary/80 focus:ring focus:ring-primary/20 focus:ring-opacity-50 rounded-lg shadow-sm disabled:bg-gray-50 disabled:text-gray-500 disabled:border-gray-200 disabled:shadow-none placeholder:text-gray-400
+		dark:border-gray-700/90 dark:focus:border-primary/80 dark:focus:ring dark:focus:ring-primary/20 dark:focus:ring-opacity-50 dark:shadow-sm dark:disabled:bg-gray-50 dark:disabled:text-gray-500 dark:disabled:border-gray-200 dark:disabled:shadow-none dark:placeholder:text-gray-400 dark:bg-secondary-dark dark:rounded-lg;
+}
+
+.multiselect__content {
+	@apply dark:bg-secondary-dark dark:text-secondary-lighter dark:border-gray-700/90;
+}
+
+.multiselect__single {
+	@apply dark:bg-secondary-dark dark:text-secondary-lighter dark:border-gray-700/90;
+}
+.multiselect__option--selected {
+	@apply dark:bg-success-light dark:text-secondary-dark;
+}
+.multiselect__input {
+	@apply dark:bg-secondary-dark dark:text-secondary-lighter dark:border-gray-700/90;
+}
+
+.multiselect__option--highlight {
+	@apply dark:bg-primary dark:text-secondary-lighter;
+}
+/* End */
