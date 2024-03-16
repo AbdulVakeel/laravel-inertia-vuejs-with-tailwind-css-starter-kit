@@ -23,8 +23,9 @@
 <p>registration for first user admin</p>
 
 <img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
-<img src="https://skycodelab.io//git/staff.png" width="400" alt="image admin dashboard">
-<img src="https://skycodelab.io//git/profile.png" width="400" alt="image admin dashboard">
+<img src="https://skycodelab.io//git/staff.png" width="400" alt="image admin staff">
+<img src="https://skycodelab.io//git/profile.png" width="400" alt="imageprofile">
+<img src="https://skycodelab.io//git/login.png" width="400" alt="image login">
 
 
 ## About Laravel
