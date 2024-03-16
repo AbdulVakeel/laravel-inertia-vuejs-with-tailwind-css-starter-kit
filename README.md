@@ -18,6 +18,9 @@
 
 </p>
 
+<p>- ☺️ Latest Laravel v 10.45r</p>
+<p>- 😘Vuejs v 3.4.0 </p>
+<p>- 🤡inertiajs/vue3 v 1.0.0</p>
 
 <p>- 👉 install composer</p>
 <p>- 👉 php artisan key:generate </p>
