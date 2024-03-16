@@ -48,8 +48,7 @@
 </tbody>
 </table>
 
-
-          <table>
+<table>
 <thead>
 <tr>
 <th align="center">Profile</th>
