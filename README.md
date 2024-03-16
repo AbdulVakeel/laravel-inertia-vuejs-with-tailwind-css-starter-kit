@@ -57,8 +57,8 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src=""https://skycodelab.io//git/profile.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="[https://skycodelab.io//git/staff.png](https://skycodelab.io//git/login.png)" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.io//git/profile.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.io//git/login.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
