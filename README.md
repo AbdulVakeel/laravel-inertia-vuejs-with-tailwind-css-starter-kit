@@ -93,7 +93,7 @@
 <tbody>
 <tr>
 <td align="center"><img src="https://skycodelab.io//git/mobile.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="https://skycodelab.io//git/side.png" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.io//git/sidebar.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
