@@ -14,10 +14,10 @@
 <p>🤡inertiajs/vue3 v 1.0.0</p>
 
 <p align="center">
-<img src="https://laravel.com/img/logotype.min.svg" width="100" alt="image laravel">
-<img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="100" alt="image vue js ">
-<img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="100" alt="image inertia">
-<img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="100" alt="image tailwind css">
+<img src="https://laravel.com/img/logotype.min.svg" width="50" alt="image laravel">
+<img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="50" alt="image vue js ">
+<img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="50" alt="image inertia">
+<img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="50" alt="image tailwind css">
 
 </p>
 
