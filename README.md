@@ -22,12 +22,13 @@
 <p>php artisan serve</p>
 <p>registration for first user admin</p>
 
+<p align="center">
 <img src="https://skycodelab.io//git/admindashbord.png" width="400" alt="image admin dashboard">
 <img src="https://skycodelab.io//git/staff.png" width="400" alt="image admin staff">
 <img src="https://skycodelab.io//git/profile.png" width="400" alt="imageprofile">
 <img src="https://skycodelab.io//git/login.png" width="400" alt="image login">
 <img src="https://skycodelab.io//git/signup.png" width="400" alt="image signup">
-
+</p>
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
