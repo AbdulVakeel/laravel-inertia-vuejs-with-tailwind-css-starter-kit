@@ -20,11 +20,11 @@ class UserDashboardController extends Controller
     public function dashboardUser()
     {
         $user = auth()->user();
-        $data['user'] = $user->load('referrer');
+
 
 
         return inertia('User/Dashboard/UserDashboard', [
-            'data' => $data,
+     
         ]);
     }
 
