@@ -12,7 +12,7 @@ class Role extends SpatieRole
     use HasFactory,  Memoization;
 
     /**
-     * Get "Administrator" Role
+     * Get "Administrator" Role Models
      */
     public static function administrator(): Role
     {
