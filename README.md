@@ -29,8 +29,8 @@
 <p>- 👉 update db name db username db password </p>
 <p>- 👉 php artisan key:generate </p>
 <p>- 👉 php artisan migrate --seed</p>
-<p>- 👉 yarn install</p>
-<p>- 👉 yarn dev</p>
+<p>- 👉 npm Install or yarn install</p>
+<p>- 👉 npm run dev or yarn dev</p>
 <p>- 👉 php artisan serve</p>
 <p>- 👉 registration for first user admin</p>
 <p>- 👉 clear a cache hit this link your local server http://127.0.0.1:8000/clear</p>
