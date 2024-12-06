@@ -14,6 +14,7 @@ use App\Http\Controllers\UserDashboardController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\ManageUserController;
 use App\Http\Controllers\ProfileController;
 
 
@@ -26,7 +27,8 @@ Route::middleware([
 	Route::group(['prefix' => 'admin'], function () {
 		/* ! admin dashboard  */
 		Route::get('/dashboard', [AdminDashboardController::class, 'dashboard'])->name('admin.dashboard');
-		
+		Route::get('/allUsers', [ManageUserController::class, 'index'])->name('admin.users.index');
+
 		// Admin Profile
 		Route::get('/profile', [AdminProfileController::class, 'show'])->name('admin.profile.show');
 		Route::put('/profile-information', [AdminProfileController::class, 'update'])
