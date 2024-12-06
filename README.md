@@ -22,7 +22,7 @@
 </p>
 
 
-<p>- 👉 install composer</p>
+<p>- 👉 composer install </p>
 <p> - 👉 create a db [db name db username db password] </p>
 <p> - 👉 copy .env.example </p>
 <p> - 👉 rename .env </p>
