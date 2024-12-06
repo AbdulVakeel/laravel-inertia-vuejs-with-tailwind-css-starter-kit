@@ -30,11 +30,17 @@ export default function useNavigations() {
       current: route().current('admin.dashboard'),
     },
 
-  
+    {
+      visible: user.value.is_super_admin || hasPermissions(['update_user']),
+      name: __('Manage User'), 
+      icon: 'active-user',
+      href: route('admin.users.index'),
+      current: route().current('admin.users.index'),
+    },
 
     {
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
-      name: __('Users /  Staffs'),
+      name: __('Manage Staffs'),
       icon: 'users',
       current: route().current('admin.role.*') || route().current('admin.staffs.index*') ,
       children: [
