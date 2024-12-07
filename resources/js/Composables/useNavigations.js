@@ -60,9 +60,38 @@ export default function useNavigations() {
           current: route().current('admin.staffs.index*'),
         },
 
+
       ],
     },
- 
+
+    {
+      visible: user.value.is_super_admin || hasPermissions(['update_users']),
+      name: __('Components'),
+      icon: 'components',
+      current: route().current('admin.components.buttion.*') || route().current('admin.components.heading*') ,
+      children: [
+       
+       
+    {
+      visible: true,
+      name: __('Buttion'), 
+      href: route('admin.components.buttion'),
+      current: route().current('admin.components.buttion'),
+    },
+
+
+    {
+      visible: true,
+      name: __('Heading'), 
+      href: route('admin.components.heading'),
+      current: route().current('admin.components.heading'),
+    },
+
+
+      ],
+    },
+    
+
   
   ];
 

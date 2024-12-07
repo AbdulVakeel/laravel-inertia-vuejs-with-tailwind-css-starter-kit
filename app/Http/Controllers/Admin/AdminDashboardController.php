@@ -37,6 +37,20 @@ class AdminDashboardController extends Controller
 
         ]);
     }
+
+    public function buttion()
+    {
+        return inertia('Admin/Components/Buttion', [
+
+        ]);
+    }
+
+    public function heading()
+    {
+        return inertia('Admin/Components/Heading', [
+
+        ]);
+    }
     
      /***********************************
      * End THIS IS A  Admin Dashboard Controller *

@@ -50,6 +50,7 @@ declare global {
   const useAttrs: typeof import('vue')['useAttrs']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
+  const useCurrencyFormatter: typeof import('./resources/js/Composables/useCurrencyFormatter.js')['default']
   const useForm: typeof import('@inertiajs/vue3')['useForm']
   const useHelpers: typeof import('./resources/js/Composables/useHelpers.js')['default']
   const useModal: typeof import('./resources/js/Composables/useModal.js')['default']

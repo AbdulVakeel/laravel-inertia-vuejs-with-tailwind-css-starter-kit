@@ -1,2 +1,3 @@
-import moment from 'moment';
-import VWave from 'v-wave'
+import './bootstrap';
+import '../scss/app.scss';
+import '../../node_modules/ionicons/dist/ionicons/ionicons.esm.js';

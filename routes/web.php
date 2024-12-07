@@ -29,6 +29,13 @@ Route::middleware([
 		Route::get('/dashboard', [AdminDashboardController::class, 'dashboard'])->name('admin.dashboard');
 		Route::get('/allUsers', [ManageUserController::class, 'index'])->name('admin.users.index');
 
+		Route::get('/buttion', [AdminDashboardController::class, 'buttion'])->name('admin.components.buttion');
+
+
+		Route::get('/heading', [AdminDashboardController::class, 'heading'])->name('admin.components.heading');
+
+
+
 		// Admin Profile
 		Route::get('/profile', [AdminProfileController::class, 'show'])->name('admin.profile.show');
 		Route::put('/profile-information', [AdminProfileController::class, 'update'])

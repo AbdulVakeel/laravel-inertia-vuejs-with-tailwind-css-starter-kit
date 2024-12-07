@@ -52,6 +52,8 @@ declare module '@vue/runtime-core' {
     PrimaryButton: typeof import('./resources/js/Components/UI/PrimaryButton.vue')['default']
     RecordsPerPageListBox: typeof import('./resources/js/Components/UI/RecordsPerPageListBox.vue')['default']
     ResponsiveNavLink: typeof import('./resources/js/Components/UI/ResponsiveNavLink.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     SearchFilter: typeof import('./resources/js/Components/UI/SearchFilter.vue')['default']
     SearchInput: typeof import('./resources/js/Components/UI/SearchInput.vue')['default']
     SecondaryButton: typeof import('./resources/js/Components/UI/SecondaryButton.vue')['default']

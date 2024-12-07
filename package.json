@@ -20,11 +20,15 @@
 	},
 	"dependencies": {
 		"@headlessui/vue": "^1.7.9",
+		"@heroicons/vue": "^2.2.0",
+		"@ionic/vue": "^8.4.1",
 		"@vueuse/core": "^9.13.0",
 		"@vueuse/head": "^1.1.26",
+		"apexcharts": "^4.1.0",
 		"caniuse-lite": "^1.0.30001576",
 		"class-variance-authority": "^0.4.0",
 		"install": "^0.13.0",
+		"ionicons": "^7.4.0",
 		"moment": "^2.29.4",
 		"npm": "^10.2.5",
 		"or": "^0.2.0",
@@ -36,6 +40,8 @@
 		"unplugin-vue-components": "^0.23.0",
 		"v-wave": "^1.5.0",
 		"vue-multiselect": "^3.0.0-beta.1",
+		"vue-router": "^4.5.0",
+		"vue3-apexcharts": "^1.8.0",
 		"xlsx": "^0.18.5"
 	}
 }

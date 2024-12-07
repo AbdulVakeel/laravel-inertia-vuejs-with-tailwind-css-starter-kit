@@ -22,6 +22,7 @@ export default defineConfig({
         Components({
             dirs: [
                 './resources/js/Components/**',
+                
             ],
             imports: [
                 {
