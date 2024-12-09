@@ -8,7 +8,7 @@
 </p>
 
 <p align="center"><a href="https://skycodelab.io" target="_blank"><img src="https://skycodelab.io//uploads/site/logo.png" width="200" alt="Sky Code Lab Logo"></a></p>
-<h1>"I worked hard to create a kit, and you all are creating clones but not giving stars. Why? If you give stars, it will motivate me, and I can implement more features and take it further. The Laravel React starter kit is coming soon, so please don't forget to give a star."</h1>
+<h2>"I worked hard to create a kit, and you all are creating clones but not giving stars. Why? If you give stars, it will motivate me, and I can implement more features and take it further. The Laravel React starter kit is coming soon, so please don't forget to give a star."</h2>
 <p>☺️ Latest Laravel v 10.45</p>
 <p>😘Vuejs v 3.4.0 </p>
 <p>🤡inertiajs/vue3 v 1.0.0</p>
