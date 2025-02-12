@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework"   alt="License"></a>
 </p>
 
-<p align="center"><a href="https://skycodelab.in" target="_blank"><img src="https://skycodelab.in//uploads/site/logo.png" width="200" alt="Sky Code Lab Logo"></a></p>
+<p align="center"><a href="https://skycodelab.in" target="_blank"><img src="https://skycodelab.in/uploads/site/logo.png" width="200" alt="Sky Code Lab Logo"></a></p>
 
 <p>☺️ Latest Laravel v 10.45</p>
 <p>😘Vuejs v 3.4.0 </p>
@@ -47,8 +47,8 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://skycodelab.in//git/dashbord-latest.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="https://skycodelab.in//git/component-buttion.png" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.in/git/dashbord-latest.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.in/git/component-buttion.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -62,8 +62,8 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://skycodelab.in//git/admindashbord.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="https://skycodelab.in//git/staff.png" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.in/git/admindashbord.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.in/git/staff.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -77,8 +77,8 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://skycodelab.in//git/profile.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="https://skycodelab.in//git/login.png" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.in/git/profile.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.in/git/login.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -93,8 +93,8 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://skycodelab.in//git/signup.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="https://skycodelab.in//git/roll.png" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.in/git/signup.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.in/git/roll.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -109,8 +109,8 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://skycodelab.in//git/mobile.png" alt=""style="max-width: 100%;"></td>
-<td align="center"><img src="https://skycodelab.in//git/sidebar.png" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><img src="https://skycodelab.in/git/mobile.png" alt=""style="max-width: 100%;"></td>
+<td align="center"><img src="https://skycodelab.in/git/sidebar.png" alt="" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
