@@ -19,7 +19,6 @@ class AdminRedirect
         if (auth()->user()->hasAnyRole(['super_admin', 'staff', 'manager'])) {
             return redirect(route('admin.dashboard'));
         }
-
         return $next($request);
     }
 }
