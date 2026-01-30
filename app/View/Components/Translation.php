@@ -10,7 +10,7 @@ use Illuminate\View\Component;
 class Translation extends Component
 {
     /**
-     * Create a new component instance.
+     * Create a new component  instance.
      */
     public function __construct()
     {
