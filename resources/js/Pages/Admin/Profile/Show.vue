@@ -5,7 +5,7 @@
   
   ----------------------------------------------------------------------------------------
   Author: Sky Code Lab
-  Author URL: https://www.skycodelab.io/
+  Author URL: https://www.skycodelab.in/
 ==========================================================================================*/
 
 import { useUrlSearchParams } from '@vueuse/core';
