@@ -17,9 +17,6 @@ defineProps({
     status: String,
 });
 
-const flash = computed(() => usePage().props.flash);
-
-const app = computed(() => usePage().props.app);
 
 
 const form = useForm({
