@@ -38,7 +38,7 @@ const showPasswordTextconfirmation = ref(false);
   File Name: register
   
   ----------------------------------------------------------------------------------------
-  Author: Sky Code Lab
+  Author: Abdul Vakeel
   Author URL: https://www.skycodelab.in/
 ==========================================================================================*/
 
