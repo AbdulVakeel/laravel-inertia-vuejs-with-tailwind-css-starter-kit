@@ -22,11 +22,10 @@ const navItems = computed(() => menuType === 'admin' ? navigations.adminNavItems
 </script>
 
 <template>
-	<div
-		:class="[
-			'static flex flex-col flex-grow pt-2 bg-[#0a1e35] overflow-y-auto custom-scrollbar border-r-2 border-secondary border-dotted  kw  h-full w-3/3 md:1/2',
-			open ? 'absolute flex' : 'hidden',
-		]">
+	 <div :class="[
+        'static flex flex-col flex-grow pt-5 bg-secondary-dark overflow-y-auto custom-scrollbar border-r-2 border-secondary border-violet-200/20 kw h-full',
+        open ? 'absolute flex w-2/3 md:w-1/2' : 'hidden'
+    ]">
 		<Link href="/">
 			<div class="flex items-center flex-shrink-0 px-4 h-14">
 				<ApplicationLogo :class="[' h-12']" />

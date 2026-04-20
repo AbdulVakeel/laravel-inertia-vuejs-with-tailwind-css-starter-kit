@@ -24,7 +24,7 @@ const navItems = computed(() => menuType === 'admin' ? navigations.adminNavItems
 	<div
 		:key="Date.now().toString()"
 		:class="[
-			'static flex flex-col flex-grow  bg-[#0a1e35] overflow-y-auto custom-scrollbar border-r-2 border-secondary border-dotted  transition-all ease-in-out duration-300 group/sidebar h-full ',
+			'static flex flex-col flex-grow  bg-secondary-bgsidebar overflow-y-auto custom-scrollbar border-r-2 border-violet-200/20  transition-all ease-in-out duration-300 group/sidebar h-full ',
 			!isSidebarOpen
 				? 'hover:absolute hover:md:w-64 md:w-14 hover:backdrop-blur dark:hover:bg-secondary-darker/70 hover:bg-secondary-darker/[100%]'
 				: '',

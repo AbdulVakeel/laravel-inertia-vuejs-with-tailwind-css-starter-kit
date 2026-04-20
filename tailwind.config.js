@@ -5,82 +5,72 @@ const colors = require('tailwindcss/colors');
 module.exports = {
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
-        './node_modules/@protonemedia/inertiajs-tables-laravel-query-builder/**/*.{js,vue}',
     ],
-
+    
     darkMode: 'class',
-
+    
     theme: {
-        mode: 'jit',
-        container: {
-			center: true,
-			padding: '1rem',
-		},
         extend: {
-          fontFamily: {
-            sans: ['Roboto ', 'sans-serif', ...defaultTheme.fontFamily.sans],
-            inter: "'Inter', sans-serif",
-
-			},
-
+            fontFamily: {
+                sans: ['Inter', 'Open Sans', ...defaultTheme.fontFamily.sans],
+            },
             colors: {
                 transparent: 'transparent',
                 current: 'currentColor',
                 primary: {
-                    lighter: '#bcd7ff',
-                    light: '#599bff',
-                    DEFAULT: '#0ea5e9',
-                    dark: '#818cf8',
-                    darker: '#818cf8',
+                    lighter: '#feecc7',
+                    light: '#fed889',
+                    DEFAULT: '#f78109', 
+                    dark: '#fda92d',
+                    darker: '#b63d07',
                 },
                 secondary: {
                     lighter: '#f5f8fa',
-                    light: '#919eab',       //  '#92929f'
-                    DEFAULT: '#333d48',     // '#92929f'    // #333d48
-                    dark: '#0a1e35',        //  #161c24
-                    darker: '#0a1e35',      // '#161c24',
+                    light: '#919eab',
+                    DEFAULT: '#333d48',
+                    dark: '#212b36',
+                    darker: '#161c24',
+                    bgsidebar: '#1a202c',
                 },
-                 
                 info: {
-                    lighter: "#D0F2FF",
-                    light: "#74CAFF",
-                    DEFAULT: "#1890FF",
-                    dark: "#161c24",
-                    darker: "#161c24" // text-info-darker
+                    lighter: '#D0F2FF',
+                    light: '#74CAFF',
+                    DEFAULT: '#1890FF',
+                    dark: '#0C53B7',
+                    darker: '#04297A',
                 },
                 success: {
-                    lighter: "#E9FCD4",
-                    light: "#AAF27F",
-                    DEFAULT: "#54D62C",
-                    dark: "#161c24", //#161c24
-                    darker: "#161c24" // #161c24
+                    lighter: '#E9FCD4',
+                    light: '#AAF27F',
+                    DEFAULT: '#54D62C',
+                    dark: '#229A16',
+                    darker: '#08660D',
                 },
                 warning: {
-                    lighter: "#FFF7CD",
-                    light: "#FFE16A",
-                    DEFAULT: "#FFC107",
-                    dark: "#e29400",
-                    darker: "#bb6902"
+                    lighter: '#FFF7CD',
+                    light: '#FFE16A',
+                    DEFAULT: '#FFC107',
+                    dark: '#B78103',
+                    darker: '#7A4F01',
                 },
                 danger: {
-                    lighter: "#FFE7D9",
-                    light: "#FFA48D",
-                    DEFAULT: "#FF4842",
-                    dark: "#ed1c15",
-                    darker: "#c8130d"
+                    lighter: '#FFE7D9',
+                    light: '#FFA48D',
+                    DEFAULT: '#FF4842',
+                    dark: '#B72136',
+                    darker: '#7A0C2E',
                 },
             },
-
             boxShadow: {
-                'md': '0 5px 10px 0px rgba(0, 0, 0, 0.2)',
-                // 0px 8px 16px 0px rgb(253 169 45 / 24 %)
-            }
+                md: '0 5px 10px 0px rgba(0, 0, 0, 0.2)',
+            },
         },
     },
-
+    
     plugins: [
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
