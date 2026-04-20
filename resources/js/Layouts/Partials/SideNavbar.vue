@@ -33,7 +33,7 @@ const navItems = computed(() => menuType === 'admin' ? navigations.adminNavItems
 			<Link :href="route('admin.dashboard')">
 				<div class="flex items-center flex-shrink-0 px-4 h-14">
 					<ApplicationLogo
-						:class="[isSidebarOpen ? 'h-20 p-8 ' : 'invisible group-hover/sidebar:visible group-hover/sidebar:h-12']" />
+						:class="[isSidebarOpen ? 'w-56 p-2' : 'invisible group-hover/sidebar:visible group-hover/sidebar:h-12']" />
 				</div>
 			</Link>
 

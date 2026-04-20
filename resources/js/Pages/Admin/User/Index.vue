@@ -1,6 +1,5 @@
 <script setup>
 
-
 const data = computed(() => usePage().props.data);
 
 const items = computed(() => data.value.items);
@@ -47,6 +46,8 @@ const pageTitle = computed(() => data.value.pageTitle);
                 class="rounded-xl"
                 @onSort="onSort"
                 :key="Date.now().toString() + 1">
+
+
                 <template #cell(country)="{ item }">
                     <p class="px-1 pt-2 text-sm text-light">{{ item.country }}</p>
                 </template>
@@ -58,10 +59,10 @@ const pageTitle = computed(() => data.value.pageTitle);
                 <template #cell(mobile)="{ item }">
                     <p class="px-1 pb-2 text-sm text-light">{{ item.mobile }}</p>
                 </template>
-                
-                             <template #cell(created_at)="{ item }">
-                    <p class="px-1 py-2 text-sm text-light">{{ (item.created_at) }}</p>
-                </template>
+
+                 <template #cell(created_at)="{ item }">
+                    <CreatedAtCell :item="item" />
+                 </template>
 
 
             </DataTable>

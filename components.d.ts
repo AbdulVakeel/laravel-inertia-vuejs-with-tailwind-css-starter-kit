@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     ComboboxInput: typeof import('./resources/js/Components/UI/ComboboxInput.vue')['default']
     ConfirmationModal: typeof import('./resources/js/Components/UI/ConfirmationModal.vue')['default']
     ConfirmsPassword: typeof import('./resources/js/Components/UI/ConfirmsPassword.vue')['default']
+    CreatedAtCell: typeof import('./resources/js/Components/CreatedAtCell.vue')['default']
     DangerButton: typeof import('./resources/js/Components/UI/DangerButton.vue')['default']
     DataTable: typeof import('./resources/js/Components/UI/DataTable/DataTable.vue')['default']
     DataTablePagination: typeof import('./resources/js/Components/UI/DataTable/DataTablePagination.vue')['default']
@@ -72,6 +73,7 @@ declare module '@vue/runtime-core' {
     TextInput: typeof import('./resources/js/Components/UI/TextInput.vue')['default']
     ToggleInput: typeof import('./resources/js/Components/UI/ToggleInput.vue')['default']
     TrashedMessage: typeof import('./resources/js/Components/Application/TrashedMessage.vue')['default']
+    UserProfileCard: typeof import('./resources/js/Components/UserProfileCard.vue')['default']
     ValidationErrors: typeof import('./resources/js/Components/Application/ValidationErrors.vue')['default']
   }
 }

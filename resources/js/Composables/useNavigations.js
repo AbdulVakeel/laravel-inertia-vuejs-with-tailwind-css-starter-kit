@@ -68,7 +68,7 @@ export default function useNavigations() {
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
       name: __('Components'),
       icon: 'components',
-      current: route().current('admin.components.buttion.*') || route().current('admin.components.heading*') ,
+      current: route().current('admin.components.buttion') || route().current('admin.components.heading') ,
       children: [
        
        
