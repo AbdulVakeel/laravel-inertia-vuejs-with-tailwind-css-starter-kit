@@ -39,7 +39,7 @@ Route::middleware([
         Route::post('faq-store', [FaqController::class, 'store'])->name('admin.faqs.store');
         Route::put('faq-update/{id}', [FaqController::class, 'update'])->name('admin.faqs.update');
 
-		
+
 		// Admin Profile
 		Route::get('/profile', [AdminProfileController::class, 'show'])->name('admin.profile.show');
 		Route::put('/profile-information', [AdminProfileController::class, 'update'])
@@ -78,6 +78,7 @@ Route::middleware([
 
 	Route::prefix('user')->group(function () {
 		Route::get('/dashboard', [UserDashboardController::class, 'dashboardUser'])->name('user.dashboard');
+		Route::get('/faq', [UserDashboardController::class, 'faq'])->name('user.faq.index');
 		// Profile
 		Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show')
 			->withoutMiddleware(['admin.redirect']);

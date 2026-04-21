@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
+use Inertia\Inertia;
 class UserDashboardController extends Controller
 {
 
@@ -21,10 +23,17 @@ class UserDashboardController extends Controller
     {
         $user = auth()->user();
 
-
-
         return inertia('User/Dashboard/UserDashboard', [
      
+        ]);
+    }
+
+       public function faq()
+    {
+        $data['faqs'] = Faq::orderBy('id', 'asc')->get(); 
+
+        return Inertia::render('User/Faq/Index', [
+            'data' => $data,
         ]);
     }
 

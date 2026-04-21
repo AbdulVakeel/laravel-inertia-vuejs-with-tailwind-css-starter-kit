@@ -17,6 +17,14 @@ export default function useNavigations() {
       current: route().current('home') || route().current('user.dashboard'),
     },
 
+     {
+            visible: true,
+            name: _('Faq'),
+            icon: 'dpd',
+            href: route('user.faq.index'),
+            current: route().current('user.faq.index'),
+        },
+
 
   ];
 
