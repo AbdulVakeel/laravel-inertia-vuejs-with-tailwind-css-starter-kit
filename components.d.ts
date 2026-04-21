@@ -70,6 +70,7 @@ declare module '@vue/runtime-core' {
     TableHeader: typeof import('./resources/js/Components/UI/DataTable/TableHeader.vue')['default']
     TableResetButton: typeof import('./resources/js/Components/UI/DataTable/TableResetButton.vue')['default']
     TextareaInput: typeof import('./resources/js/Components/UI/TextareaInput.vue')['default']
+    TextEditor: typeof import('./resources/js/Components/TextEditor.vue')['default']
     TextInput: typeof import('./resources/js/Components/UI/TextInput.vue')['default']
     ToggleInput: typeof import('./resources/js/Components/UI/ToggleInput.vue')['default']
     TrashedMessage: typeof import('./resources/js/Components/Application/TrashedMessage.vue')['default']

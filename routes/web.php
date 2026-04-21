@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\ManageUserController;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\Admin\FaqController;
 
 /* Admin Routes  */
 
@@ -35,7 +35,11 @@ Route::middleware([
 		Route::get('/heading', [AdminDashboardController::class, 'heading'])->name('admin.components.heading');
 
 
+    Route::get('faq', [FaqController::class, 'index'])->name('admin.faqs.index');
+        Route::post('faq-store', [FaqController::class, 'store'])->name('admin.faqs.store');
+        Route::put('faq-update/{id}', [FaqController::class, 'update'])->name('admin.faqs.update');
 
+		
 		// Admin Profile
 		Route::get('/profile', [AdminProfileController::class, 'show'])->name('admin.profile.show');
 		Route::put('/profile-information', [AdminProfileController::class, 'update'])

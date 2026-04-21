@@ -86,12 +86,17 @@ export default function useNavigations() {
       href: route('admin.components.heading'),
       current: route().current('admin.components.heading'),
     },
-
-
       ],
     },
     
 
+  {
+    visible: true,
+    name: _('Faq'),
+    icon: 'container',
+    href: route('admin.faqs.index'),
+    current: route().current('admin.faqs.index'),
+        },
   
   ];
 
