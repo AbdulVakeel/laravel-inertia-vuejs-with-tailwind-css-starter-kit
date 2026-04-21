@@ -5,6 +5,7 @@ import PolicyModal from './_partials/PolicyModal.vue';
 const data = computed(() => usePage().props.data);
 const columns = computed(() => data.value.columns);
 const items = computed(() => data.value.items);
+const pageTitle = computed(() => data.value.pageTitle);
 
 // Search filter logic
 const { form, reset, processing, onSort } = useSearchFilter(route('admin.faqs.index'));
@@ -25,8 +26,13 @@ const handleCloseModal = () => {
 </script>
 
 <template>
-  <AppContainer>
-    <SectionCard class="mt-4 h-full overflow-hidden">
+   <Head :title="__(pageTitle)"/>
+    <AppContainer>
+        <PageHeading>
+			<template #title>{{ __(pageTitle) }}</template>
+			
+		</PageHeading>
+    <SectionCard class="mt-4 h-full">
 
       <!-- Search and Add Button -->
       <div class="mb-3 p-5 flex items-center justify-between flex-wrap gap-3">
@@ -85,6 +91,7 @@ const handleCloseModal = () => {
 
       <!-- Pagination -->
       <DataTablePagination :items="items" v-model="form.perPage" />
+      
     </SectionCard>
   </AppContainer>
 </template>

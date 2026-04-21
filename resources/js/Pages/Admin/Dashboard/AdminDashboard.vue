@@ -11,7 +11,7 @@
 
 import UserWidget from './Partials/UserWidget.vue';
 
-
+const pageTitle = computed(() => data.value.pageTitle);
 const app = computed(() => usePage().props.app);
 
 const data = computed(() => usePage().props.data);
@@ -19,7 +19,12 @@ const data = computed(() => usePage().props.data);
 
 <template>
 
-	<AppContainer>
+	 <Head :title="__(pageTitle)"/>
+    <AppContainer>
+        <PageHeading>
+			<template #title>{{ __(pageTitle) }}</template>
+			
+		</PageHeading>
 
 		<div>
 			<UserWidget />

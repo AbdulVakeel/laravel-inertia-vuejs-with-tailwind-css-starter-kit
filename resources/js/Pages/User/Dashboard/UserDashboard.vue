@@ -9,6 +9,7 @@
 ==========================================================================================*/
 
 import userDashboardComponents from './Partials/userDashboardComponents.vue';
+const pageTitle = computed(() => data.value.pageTitle);
 
 const data = computed(() => usePage().props.data);
 
@@ -17,7 +18,12 @@ const editor = ref();
 </script>
 <template>
 
-	<AppContainer>
+	 <Head :title="__(pageTitle)"/>
+    <AppContainer>
+        <PageHeading>
+			<template #title>{{ __(pageTitle) }}</template>
+			
+		</PageHeading>
 		<userDashboardComponents :data="data" />
 	
 	</AppContainer>

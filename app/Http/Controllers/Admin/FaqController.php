@@ -37,6 +37,7 @@ class FaqController extends Controller
         ->allowedSorts($columns->map->key->all())
         ->allowedFilters([...$columns->map->key->all(), $globalSearch]);
 
+         $data['pageTitle'] = "Faq";
         $data['items'] = $query->paginate(request()->perPage ?? getPaginate())->withQueryString();
          return Inertia::render('Admin/Faqs/Index', [
             'data' => $data,

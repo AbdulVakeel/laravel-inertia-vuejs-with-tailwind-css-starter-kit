@@ -22,9 +22,9 @@ class UserDashboardController extends Controller
     public function dashboardUser()
     {
         $user = auth()->user();
-
+         $data['pageTitle'] = "Dashboard";
         return inertia('User/Dashboard/UserDashboard', [
-     
+        'data' => $data,
         ]);
     }
 

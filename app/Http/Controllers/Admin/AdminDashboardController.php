@@ -25,6 +25,7 @@ class AdminDashboardController extends Controller
     public function dashboard() {
 
         $users = User::get();
+         $data['pageTitle'] = "Dashboard";
         $users = User::doesNotAdminUser()->orWhereDoesntHave('roles')->get();
         $data['banned_users'] = $users->where('status', 0)->count();
         $data['all_users']             = $users->count();
