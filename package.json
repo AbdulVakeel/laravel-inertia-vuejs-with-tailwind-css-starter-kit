@@ -19,6 +19,7 @@
 		"vue": "^3.4.0"
 	},
 	"dependencies": {
+		"@google-translate-select/vue3": "^0.1.9",
 		"@headlessui/vue": "^1.7.9",
 		"@heroicons/vue": "^2.2.0",
 		"@ionic/vue": "^8.4.1",
