@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\ManageUserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\FaqController;
+use App\Http\Controllers\Admin\SupportTicketController;
+use App\Http\Controllers\TicketController;
 
 /* Admin Routes  */
 
@@ -39,6 +41,12 @@ Route::middleware([
         Route::post('faq-store', [FaqController::class, 'store'])->name('admin.faqs.store');
         Route::put('faq-update/{id}', [FaqController::class, 'update'])->name('admin.faqs.update');
 
+		   Route::prefix('ticket')->name('admin.ticket.')->controller(SupportTicketController::class)->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::get('/view/{id}', 'view')->name('view');
+            Route::post('/reply/{id}', 'reply')->name('reply');
+            Route::post('/close/{id}', 'close')->name('close');
+        });
 
 		// Admin Profile
 		Route::get('/profile', [AdminProfileController::class, 'show'])->name('admin.profile.show');
@@ -79,6 +87,20 @@ Route::middleware([
 	Route::prefix('user')->group(function () {
 		Route::get('/dashboard', [UserDashboardController::class, 'dashboardUser'])->name('user.dashboard');
 		Route::get('/faq', [UserDashboardController::class, 'faq'])->name('user.faq.index');
+
+		  Route::controller(TicketController::class)
+            ->prefix('ticket')
+            ->name('user.ticket.')
+            ->group(function () {
+                Route::get('/', 'index')->name('index');
+                Route::get('new', 'create')->name('open');
+                Route::post('create', 'store')->name('store');
+                Route::get('view/{ticket}', 'show')->name('view');
+                Route::post('reply/{id}', 'reply')->name('reply');
+                Route::post('close/{id}', 'close')->name('close');
+                Route::get('download/{attachment_id}', 'ticketDownload')->name('download');
+            });
+
 		// Profile
 		Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show')
 			->withoutMiddleware(['admin.redirect']);
@@ -86,6 +108,7 @@ Route::middleware([
 			->name('user-profile-information.update')->withoutMiddleware(['admin.redirect']);
 		});
 	});
+	
 	
 	/*| Register new user*/
 Route::get('/signup', [RegisteredUserController::class, 'UserRegistrationForm'])->name('register');

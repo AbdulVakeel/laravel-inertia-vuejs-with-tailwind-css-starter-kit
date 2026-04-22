@@ -146,6 +146,13 @@ class User extends Authenticatable
     {
         return $query->where('ev', 0);
     }
+    /**
+     * Get user's support tickets
+     */
+    public function tickets()
+    {
+        return $this->hasMany(SupportTicket::class);
+    }
 
 
     public function scopeEmailVerified($query)

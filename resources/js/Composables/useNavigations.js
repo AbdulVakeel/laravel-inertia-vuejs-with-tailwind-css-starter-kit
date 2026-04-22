@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue';
 import { usePage } from '@inertiajs/vue3';
 import usePermissions from '@/Composables/usePermissions.js';
-
+import { Icon } from '@iconify/vue'
 const { hasPermissions } = usePermissions();
 const user = computed(() => usePage().props.user);
 const app = computed(() => usePage().props.app);
@@ -12,7 +12,7 @@ export default function useNavigations() {
     {
       visible: true,
       name: __('menus.Dashboard'),
-      icon: 'dashboard',
+      icon: 'mdi:home',
       href: route('user.dashboard'),
       current: route().current('home') || route().current('user.dashboard'),
     },
@@ -20,11 +20,17 @@ export default function useNavigations() {
      {
             visible: true,
             name: _('Faq'),
-            icon: 'dpd',
+            icon: 'qlementine-icons:faq-16',
             href: route('user.faq.index'),
             current: route().current('user.faq.index'),
         },
-
+{
+            visible: true,
+            name: _('Support'),
+            icon: 'fluent:person-support-24-filled',
+            href: route('user.ticket.index'),
+            current: route().current('user.ticket.index'),
+        },
 
   ];
 
@@ -33,7 +39,7 @@ export default function useNavigations() {
     {
       visible: user.value.is_super_admin || hasPermissions(['update_dashboard']),
       name: __('Dashboard'), 
-      icon: 'home',
+     icon: 'mdi:home',
       href: route('admin.dashboard'),
       current: route().current('admin.dashboard'),
     },
@@ -41,7 +47,7 @@ export default function useNavigations() {
     {
       visible: user.value.is_super_admin || hasPermissions(['update_user']),
       name: __('Manage User'), 
-      icon: 'active-user',
+      icon: 'mdi:account-group',
       href: route('admin.users.index'),
       current: route().current('admin.users.index'),
     },
@@ -49,7 +55,7 @@ export default function useNavigations() {
     {
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
       name: __('Manage Staffs'),
-      icon: 'users',
+      icon: 'mdi:user',
       current: route().current('admin.role.*') || route().current('admin.staffs.index*') ,
       children: [
        
@@ -75,7 +81,7 @@ export default function useNavigations() {
     {
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
       name: __('Components'),
-      icon: 'components',
+       icon: 'skill-icons:styledcomponents',
       current: route().current('admin.components.buttion') || route().current('admin.components.heading') ,
       children: [
        
@@ -101,10 +107,18 @@ export default function useNavigations() {
   {
     visible: true,
     name: _('Faq'),
-    icon: 'container',
+     icon: 'qlementine-icons:faq-16',
     href: route('admin.faqs.index'),
     current: route().current('admin.faqs.index'),
         },
+
+        {
+  visible: true,
+  name: _('Support'),
+  icon: 'fluent:person-support-24-filled',
+  href: route('admin.ticket.index'),
+  current: route().current('admin.ticket.index'),
+}
   
   ];
 
