@@ -1,16 +1,14 @@
-
-
 <script setup>
 /*=========================================================================================
   File Name: login
-  
   ----------------------------------------------------------------------------------------
   Author: Abdul Vakeel
   Author URL: https://www.skycodelab.in/
 ==========================================================================================*/
 
+import { ref } from 'vue';
+import { useForm } from '@inertiajs/vue3';
 import ThemeModeToggler from './Partials/ThemeModeToggler.vue';
-
 
 defineProps({
     canResetPassword: Boolean,
@@ -18,14 +16,11 @@ defineProps({
 });
 
 
-
 const form = useForm({
     identity: '',
     password: '',
     remember: false,
-
 });
-
 
 
 /* End */
@@ -38,13 +33,11 @@ const submit = () => {
         }))
         .post(route('login'), {
             onFinish: () => form.reset('password'),
-            onSuccess: () => {
-            },
+            onSuccess: () => {},
         });
 };
+
 const showPasswordText = ref(false);
-
-
 </script>
 
 <template>
@@ -52,105 +45,117 @@ const showPasswordText = ref(false);
 
     <AuthenticationCard>
 
-     
-            <div class="flex flex-col items-center justify-center px-6 py-4 mx-auto md:h-screen lg:py-0">
-                <div
-                    class="relative w-full  rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
+        <section class="min-h-screen flex items-center justify-center p-4">
 
-                    <div class="flex items-center justify-center ">
+            <div class="w-full max-w-md bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-violet-200/20">
 
-                        <div class="flex items-start p-2 ">
-                            <ApplicationLogo class='w-56 p-2  ' />
-                        </div>
-                        <div class="absolute right-1 flex items-end p-2">
-                            <ThemeModeToggler class='' />
-                        </div>
+                <!-- Header -->
+                <div class="flex items-center justify-center p-6">
+                    <ApplicationLogo class="h-8 w-auto" />
+                    <ThemeModeToggler class="ml-4" />
+                </div>
+
+                <div class="p-4 space-y-4 md:space-y-4">
+
+                    <div v-if="status" class="mb-4 font-medium text-sm text-success">
+                        {{ status }}
                     </div>
 
-                    
+                    <ValidationErrors />
 
-                    <div class="p-4 space-y-4 md:space-y-4">
+                    <form class="space-y-2 md:space-y-4" @submit.prevent="submit">
 
-                        <div v-if="status" class="mb-4 font-medium text-sm text-success">
-                            {{ status }}
+                        <!-- Email -->
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                            {{ __('Email') }}
+                        </label>
+
+                        <Input
+                            id="email"
+                            v-model="form.identity"
+                            type="text"
+                            class="bg-gray-50 border mt-2 border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+                            :error="form.errors.identity"
+                            :placeholder="__('Please Enter Email')"
+                            required
+                        />
+
+                        <!-- Password -->
+                        <div class="relative">
+
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                                {{ __('Password') }}
+                            </label>
+
+                            <Input
+                                id="password"
+                                v-model="form.password"
+                                :type="showPasswordText ? 'text' : 'password'"
+                                class="bg-gray-50 border mt-2 border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+                                :error="form.errors.g_recaptcha_response"
+                                :placeholder="__('Please Enter Password')"
+                                required
+                                autocomplete="current-password"
+                            />
+
+                            <span
+                                class="absolute right-3 bottom-4 cursor-pointer"
+                                @click="showPasswordText = !showPasswordText"
+                            >
+                                <Icon name="eye" class="h-5" />
+                            </span>
+
                         </div>
 
-                        <div>
-                            <ValidationErrors />
-                        </div>
+                        <!-- Remember -->
+                        <div class="flex items-center justify-between">
 
-
-                        <form class="space-y-2 md:space-y-4" @submit.prevent="submit">
-
-                            <Input id="email" v-model="form.identity" type="text"
-                                class=" sm:text-sm rounded-lg  block w-full  dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400  "
-                                :error="form.errors.identity" :placeholder="__('Please Enter Email or Username')" required />
-
-                            <div class="relative">
-                              
-                                <Input id="password" v-model="form.password" :placeholder="__('Please Enter Password')"
-                                    :type="showPasswordText ? 'text' : 'password'" :error="form.errors.g_recaptcha_response"
-                                    class=" sm:text-sm rounded-lg  block w-full  dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400  "
-                                    required autocomplete="current-password"  />
-                                <span class="absolute right-3 bottom-4 cursor-pointer"
-                                    @click="showPasswordText = !showPasswordText">
-                                    <Icon name="eye" class="h-5" />
+                            <label class="flex items-center">
+                                <Checkbox v-model:checked="form.remember" name="remember" />
+                                <span class="ml-2 text-gray-500 dark:text-gray-300">
+                                    {{ __('Remember me') }}
                                 </span>
-                            </div>
+                            </label>
 
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-start">
-                                    <div class="flex items-center h-5">
-                                    </div>
-                                    <div class="ml-3 text-sm">
-                                        <label class="flex items-center">
-                                            <Checkbox v-model:checked="form.remember" name="remember" />
-                                            <span class="ml-2 text-gray-500 dark:text-gray-300">{{ __('Remember me') }}</span>
-                                        </label>
-                                    </div>
-                                </div>
-                              
+                        </div>
 
-                            </div>
-                          
-                            <Button
-				as="button"
-				class="text-sm py-2 block w-full"
-				shadow="primary"
-				:disabled="form.processing"
-				:processing="form.processing"
-				>
-				{{ __('Sign In') }}
-			</Button>
-                            
-                            <p class="text-sm  text-center">
-                                Don’t have an account yet?
+                        <!-- Button -->
+                        <Button
+                            as="button"
+                            class="text-sm py-2 block w-full"
+                            shadow="primary"
+                            :disabled="form.processing"
+                            :processing="form.processing"
+                        >
+                            {{ __('Sign In') }}
+                        </Button>
 
-                                <Link :href="route('register')"
-                                    class="font-medium ">
-                                {{ __('Sign Up') }}
-                                </Link>
+                        <!-- Signup -->
+                        <p class="text-sm text-center text-gray-600 dark:text-gray-400">
+                            {{ ('Don’t have an account yet?') }}
+                            <Link
+                                :href="route('register')"
+                                class="text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
+                            >
+                                {{ ('Sign Up') }}
+                            </Link>
+                        </p>
 
-                            </p>
-                        </form>
+                    </form>
 
-                       
-                    </div>
                 </div>
             </div>
 
+        </section>
 
     </AuthenticationCard>
 </template>
 
 <script>
 import Layout from '@/Layouts/EmptyLayout.vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-
     layout: Layout,
-
-
-
 });
 </script>
