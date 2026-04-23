@@ -77,6 +77,7 @@ declare module '@vue/runtime-core' {
     TextInput: typeof import('./resources/js/Components/UI/TextInput.vue')['default']
     ToggleInput: typeof import('./resources/js/Components/UI/ToggleInput.vue')['default']
     TrashedMessage: typeof import('./resources/js/Components/Application/TrashedMessage.vue')['default']
+    UserProfileCard: typeof import('./resources/js/Components/UserProfileCard.vue')['default']
     ValidationErrors: typeof import('./resources/js/Components/Application/ValidationErrors.vue')['default']
   }
 }

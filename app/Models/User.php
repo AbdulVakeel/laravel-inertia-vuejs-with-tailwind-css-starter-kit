@@ -131,6 +131,13 @@ class User extends Authenticatable
         });
     }
 
+       public function scopeDoesNotHaveAdminRole($query)
+    {
+        return $query->whereHas('roles', function ($query) {
+            $query->where('name', '!=', 'super_admin');
+        });
+    }
+
 
     public function scopeActive($query)
     {
