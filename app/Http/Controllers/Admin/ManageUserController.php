@@ -15,9 +15,7 @@ class ManageUserController extends Controller
          ***********************************/
         $data['columns'] = $columns = collect([
             ['key' => 'sr', 'label' => 'Sr.', 'sortable' => false, 'searchable' => false],
-            ['key' => 'username', 'label' => 'USER ID', 'sortable' => true, 'searchable' => false, 'show' => true],
-            ['key' => 'first_name', 'label' => 'First Name', 'sortable' => true, 'searchable' => false, 'show' => true],
-            ['key' => 'last_name', 'label' => 'Last Name', 'sortable' => true, 'searchable' => false, 'show' => true],
+            ['key' => 'username', 'label' => 'User', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'email', 'label' => 'Email', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'mobile', 'label' => 'Phone', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'created_at', 'label' => 'Joined At', 'sortable' => true, 'searchable' => false, 'show' => true],

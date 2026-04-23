@@ -48,7 +48,7 @@ const toggleMobileMenu = () => {
 
 			<FlashMessage />
 
-			<div class="min-h-screen bg-white dark:bg-secondary-dark text-light">
+			<div class="min-h-screen">
 				<!-- Page Heading -->
 				<header v-if="$slots.header">
 					<div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8">
