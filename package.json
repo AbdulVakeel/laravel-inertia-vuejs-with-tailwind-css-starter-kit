@@ -22,6 +22,7 @@
 		"@google-translate-select/vue3": "^0.1.9",
 		"@headlessui/vue": "^1.7.9",
 		"@heroicons/vue": "^2.2.0",
+		"@iconify/vue": "^5.0.0",
 		"@ionic/vue": "^8.4.1",
 		"@vueuse/core": "^9.13.0",
 		"@vueuse/head": "^1.1.26",
