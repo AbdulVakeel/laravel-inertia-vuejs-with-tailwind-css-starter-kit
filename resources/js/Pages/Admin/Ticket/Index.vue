@@ -76,19 +76,19 @@ const { form, reset, processing, onSort } = useSearchFilter(route('admin.ticket.
               <template #cell(priority)="{ item }">
                 <PriorityCell :item="item" field="priority" />
             </template>
-      <template #cell(actions)="{ item }">
-                <div class="flex space-x-2">
-                    
-                    <Link
-                        :href="route('admin.ticket.view', item.id)"
-                        class="text-blue-500 hover:underline"
-                    >
-                                   <Icon icon="mdi:pencil-outline" class="custom-icon-16" />
+   <template #cell(actions)="{ item }">
+  <div class="flex space-x-2">
 
-                    </Link>
-                  
-                </div>
-            </template>
+    <Link
+      v-if="item.status !== 3"
+      :href="route('admin.ticket.view', item.id)"
+      class="text-blue-500 hover:text-blue-700"
+    >
+      <Icon icon="mdi:pencil-outline" class="custom-icon-16" />
+    </Link>
+
+  </div>
+</template>
     </DataTable>
 
     <DataTablePagination :items="items" v-model="form.perPage" />

@@ -1,9 +1,9 @@
 <script setup>
 import { useForm, usePage } from '@inertiajs/vue3';
-import { computed } from 'vue';
+import { computed, nextTick, onMounted } from 'vue';
 import useHelpersDate from '@/Utils/useHelpersDate.js';
 
-const { timeAgo, formattedDateTime } = useHelpersDate();
+const { timeAgo } = useHelpersDate();
 
 const page = usePage();
 const pageTitle = computed(() => page.props.pageTitle || 'Ticket View');
@@ -19,89 +19,127 @@ const form = useForm({
 
 function reply() {
   form.post(route('admin.ticket.reply', props.ticket.id), {
-    onSuccess: () => form.reset('message'),
+    onSuccess: async () => {
+      form.reset('message');
+      await nextTick();
+      scrollBottom();
+    },
   });
 }
 
 function closeTicket() {
   form.post(route('admin.ticket.close', props.ticket.id));
 }
+
+function scrollBottom() {
+  const el = document.getElementById('chatBox');
+  if (el) el.scrollTop = el.scrollHeight;
+}
+
+onMounted(() => {
+  scrollBottom();
+});
 </script>
 
 <template>
-  <Head :title="__(pageTitle)"/>
-    <AppContainer>
-        <PageHeading>
-			<template #title>{{ __(pageTitle) }}</template>
-			
-		</PageHeading>
-    <div class="max-w-2xl mx-auto">
-      <SectionCard class="p-6 space-y-4">
+  <Head :title="__(pageTitle)" />
 
-        <!-- Header -->
-        <div class="flex justify-between items-center mb-4">
-          <h1 class="text-xl md:text-2xl font-semibold">
-            Ticket #{{ ticket.ticket }} - {{ ticket.subject }}
-          </h1>
+  <AppContainer>
+    <PageHeading>
+      <template #title>{{ __(pageTitle) }}</template>
+    </PageHeading>
 
-          <!-- FIXED: use button instead of Link-based Button -->
+    <!--  Chat Wrapper -->
+    <div class="max-w-3xl mx-auto">
+
+      <SectionCard class="p-0 overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800">
+
+        <!--  Header -->
+        <div class="flex justify-between items-center px-6 py-4 border-b dark:border-gray-800 bg-white dark:bg-gray-900">
+          <div>
+            <h2 class="font-semibold text-gray-800 dark:text-gray-100">
+              #{{ ticket.ticket }} - {{ ticket.subject }}
+            </h2>
+            <p class="text-sm text-gray-500">
+              👤 {{ ticket.user?.username || 'User' }}
+            </p>
+          </div>
+
           <button
             @click="closeTicket"
             class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm"
           >
-            Close Ticket
+            Close
           </button>
         </div>
 
-        <!-- Messages -->
-        <div class="space-y-4">
+        <!--  Chat Area -->
+        <div
+          id="chatBox"
+          class="flex flex-col gap-4 p-5 h-[500px] overflow-y-auto bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950"
+        >
+
           <div
             v-for="msg in messages"
             :key="msg.id"
-            class="p-4 border border-violet-200/30 rounded-lg"
+            class="flex"
+            :class="msg.admin_id ? 'justify-end' : 'justify-start'"
           >
-            <!-- FIXED: render HTML properly -->
             <div
-              v-html="msg.message"
-              class="text-sm leading-relaxed"
-            ></div>
+              class="max-w-[75%] px-4 py-3 rounded-2xl text-sm shadow"
+              :class="msg.admin_id
+                ? 'bg-indigo-500 text-white rounded-br-none'
+                : 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-bl-none border dark:border-gray-700'"
+            >
 
-            <div class="text-xs text-gray-500 mt-2">
-              {{ timeAgo(msg.created_at) }} |
-              {{ formattedDateTime(msg.created_at) }}
+              <!-- Sender -->
+              <div class="text-xs opacity-70 mb-1">
+                {{ msg.admin_id ? 'Admin' : (ticket.user?.username || 'User') }}
+              </div>
+
+              <!-- Message -->
+              <div v-html="msg.message"></div>
+
+              <!-- Time -->
+              <div class="text-[10px] mt-1 opacity-70 text-right">
+                {{ timeAgo(msg.created_at) }}
+              </div>
+
             </div>
           </div>
+
         </div>
 
-        <!-- Reply Form -->
-        <form @submit.prevent="reply" class="space-y-3 mt-4">
+        <!--  Input -->
+        <form
+          @submit.prevent="reply"
+          class="p-4 border-t dark:border-gray-800 bg-white dark:bg-gray-900"
+        >
+          <div class="flex items-center gap-3">
 
-          <!-- FIXED: added required id -->
-          <TextEditor
-            id="message"
-            v-model="form.message"
-            placeholder="Write your reply..."
-            class="w-full"
-          />
+            <TextEditor
+              v-model="form.message"
+              placeholder="Type your reply..."
+              class="flex-1"
+            />
 
-          <!-- Validation -->
-          <div v-if="form.errors.message" class="text-red-600 text-sm">
-            {{ form.errors.message }}
+            <button
+              type="submit"
+              :disabled="form.processing"
+              class="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-xl"
+            >
+              {{ form.processing ? '...' : 'Send' }}
+            </button>
+
           </div>
 
-          <!-- FIXED: proper submit button -->
-          <button
-            type="submit"
-            :disabled="form.processing"
-            class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition"
-          >
-            <span v-if="form.processing">Sending...</span>
-            <span v-else>Send Reply</span>
-          </button>
-
+          <div v-if="form.errors.message" class="text-red-500 text-sm mt-2">
+            {{ form.errors.message }}
+          </div>
         </form>
 
       </SectionCard>
+
     </div>
   </AppContainer>
 </template>

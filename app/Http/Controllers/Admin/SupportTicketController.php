@@ -42,7 +42,6 @@ class SupportTicketController extends Controller
                 }
             });
 
-        // ✅ IMPORTANT: username map kar rahe hai
         $data['items'] = $query->paginate(request()->perPage ?? getPaginate())
             ->through(function ($item) {
                 return [
