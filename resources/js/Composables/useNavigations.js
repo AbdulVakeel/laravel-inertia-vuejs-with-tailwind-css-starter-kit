@@ -78,7 +78,23 @@ export default function useNavigations() {
       ],
     },
 
-    {
+
+  {
+    visible: true,
+    name: _('Faq'),
+     icon: 'qlementine-icons:faq-16',
+    href: route('admin.faqs.index'),
+    current: route().current('admin.faqs.index'),
+        },
+
+        {
+  visible: true,
+  name: _('Support'),
+  icon: 'fluent:person-support-24-filled',
+  href: route('admin.ticket.index'),
+  current: route().current('admin.ticket.index'),
+},
+{
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
       name: __('Components'),
        icon: 'skill-icons:styledcomponents',
@@ -101,25 +117,10 @@ export default function useNavigations() {
       current: route().current('admin.components.heading'),
     },
       ],
-    },
+    }
     
 
-  {
-    visible: true,
-    name: _('Faq'),
-     icon: 'qlementine-icons:faq-16',
-    href: route('admin.faqs.index'),
-    current: route().current('admin.faqs.index'),
-        },
 
-        {
-  visible: true,
-  name: _('Support'),
-  icon: 'fluent:person-support-24-filled',
-  href: route('admin.ticket.index'),
-  current: route().current('admin.ticket.index'),
-}
-  
   ];
 
   return {
