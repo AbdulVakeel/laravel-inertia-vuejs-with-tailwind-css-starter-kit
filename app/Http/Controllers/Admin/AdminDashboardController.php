@@ -25,13 +25,16 @@ class AdminDashboardController extends Controller
     public function dashboard() {
 
         $users = User::get();
-         $data['pageTitle'] = "Dashboard";
+        $data['pageTitle'] = "Dashboard";
         $users = User::doesNotAdminUser()->orWhereDoesntHave('roles')->get();
         $data['banned_users'] = $users->where('status', 0)->count();
         $data['all_users']             = $users->count();
         $data['verify_users']          = $users->where('status', 1)->where('ev', 1)->count();
         $data['email_unverified_users']  = $users->where('ev', 0)->count();
         $data['email_verified_users']  = $users->where('ev', 1)->count();
+        $data['total_deposit_wallet'] = $users->sum('deposit_wallet');
+        $data['total_earning_wallet'] = $users->sum('earning_wallet');
+        $data['total_wallet_balance'] = $users->sum('deposit_wallet') + $users->sum('earning_wallet');
 
         return inertia('Admin/Dashboard/AdminDashboard', [
             'data' => $data,
