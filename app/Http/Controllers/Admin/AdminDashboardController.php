@@ -48,13 +48,6 @@ class AdminDashboardController extends Controller
 
         ]);
     }
-
-    public function heading()
-    {
-        return inertia('Admin/Components/Heading', [
-
-        ]);
-    }
     
      /***********************************
      * End THIS IS A  Admin Dashboard Controller *

@@ -110,27 +110,11 @@ export default function useNavigations() {
     },
 
     {
-      visible: user.value.is_super_admin || hasPermissions(['update_users']),
-      name: __('Components'),
-      icon: 'skill-icons:styledcomponents',
-      current:
-        route().current('admin.components.buttion') ||
-        route().current('admin.components.heading'),
-
-      children: [
-        {
-          visible: true,
-          name: __('Buttion'),
-          href: route('admin.components.buttion'),
-          current: route().current('admin.components.buttion'),
-        },
-        {
-          visible: true,
-          name: __('Heading'),
-          href: route('admin.components.heading'),
-          current: route().current('admin.components.heading'),
-        },
-      ],
+      visible: true,
+      name: _('Buttion'),
+       icon: 'skill-icons:styledcomponents',
+      href: route('admin.components.buttion'),
+      current: route().current('admin.components.buttion'),
     },
   ];
 
