@@ -86,7 +86,6 @@
       <td align="center"><img src="https://skycodelab.in/public/git/faq.png" width="400"></td>
       <td align="center"><img src="https://skycodelab.in/public/git/language-translator.png" width="400"></td>
     </tr>
-
      <tr>
       <td align="center"><b>📝 Membership Plans</b></td>
       <td align="center"><b>🎭 User Dashboard</b></td>
