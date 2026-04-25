@@ -1,10 +1,17 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="350" alt="Laravel Logo">
   
-  <h1 align="center" style="margin-top: 20px; font-size: 2.5rem;">🚀 Laravel + Vue.js Admin Panel And User Admin</h1>
+  <h1 align="center" style="margin-top: 20px; font-size: 2.8rem;">
+    🚀 Laravel + Vue.js Admin Panel And User Admin
+  </h1>
   
   <p align="center">
-    <strong>⚡ Modern, Fast & Scalable Admin Dashboard And User Dashboard </strong>
+    <strong>⚡ Modern, Fast & Scalable Admin Dashboard And User Dashboard</strong>
+  </p>
+
+  <!-- ⭐ STAR CTA -->
+  <p align="center">
+    ⭐ <b>If you like this project, please give it a STAR ⭐ on GitHub — it really helps!</b>
   </p>
 
   <p align="center">
@@ -15,24 +22,18 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/laravel/framework/actions">
-      <img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status">
+    <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit">
+      <img src="https://img.shields.io/github/stars/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit?style=for-the-badge" alt="Stars">
     </a>
-    <a href="https://packagist.org/packages/laravel/framework">
-      <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
-    </a>
-    <a href="https://packagist.org/packages/laravel/framework">
-      <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
-    </a>
-    <a href="https://packagist.org/packages/laravel/framework">
-      <img src="https://img.shields.io/packagist/l/laravel/framework" alt="License">
+    <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit/fork">
+      <img src="https://img.shields.io/github/forks/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit?style=for-the-badge" alt="Forks">
     </a>
   </p>
 
   <br>
 
   <a href="https://laravel-inertia-demo.skycodelab.in/login" target="_blank">
-    <img src="https://skycodelab.in/public/git/logo.png" width="180" alt="Sky Code Lab Logo">
+    <img src="https://skycodelab.in/public/git/logo.png" width="180" alt="Demo Logo">
   </a>
 
   <br><br>
@@ -85,14 +86,6 @@
       <td align="center"><img src="https://skycodelab.in/public/git/faq.png" width="400"></td>
       <td align="center"><img src="https://skycodelab.in/public/git/language-translator.png" width="400"></td>
     </tr>
-    <!-- <tr>
-      <td align="center"><b>📱 Mobile Responsive</b></td>
-      <td align="center"><b>🗂️ Sidebar (User/Admin)</b></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/mobile.png" width="250"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/sidebar.png" width="250"></td>
-    </tr> -->
   </table>
 </div>
 
@@ -101,10 +94,10 @@
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img src="https://laravel.com/img/logotype.min.svg" width="60" alt="Laravel" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="60" alt="Vue.js" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="60" alt="Inertia" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="60" alt="Tailwind" style="margin: 10px;">
+  <img src="https://laravel.com/img/logotype.min.svg" width="60" style="margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="60" style="margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="60" style="margin: 10px;">
+  <img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="60" style="margin: 10px;">
 </div>
 
 | Technology | Version |
@@ -119,17 +112,17 @@
 ## 📦 Installation Guide
 
 ### Prerequisites
-- PHP >= 8.1
-- Composer
-- Node.js & NPM/Yarn
-- MySQL/Database
+- PHP >= 8.1  
+- Composer  
+- Node.js & NPM/Yarn  
+- MySQL/Database  
 
 ### Step-by-Step Setup
 
 ```bash
 # 1. Clone the repository
-git clone your-repository-url
-cd your-project-folder
+git clone https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit.git
+cd laravel-inertia-vuejs-with-tailwind-css-starter-kit
 
 # 2. Install PHP dependencies
 composer install
@@ -151,10 +144,10 @@ php artisan key:generate
 # 7. Run migrations & seeders
 php artisan migrate --seed
 
-# 8. Build assets (in one terminal)
-npm run dev   # or yarn dev
+# 8. Build assets
+npm run dev
 
-# 9. Start development server (in another terminal)
+# 9. Start development server
 php artisan serve
 
 # 10. Register as admin
