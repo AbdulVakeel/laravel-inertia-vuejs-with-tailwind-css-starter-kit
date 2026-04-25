@@ -45,6 +45,26 @@
 
 ---
 
+## ⭐ **One Small Request**
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <h3>🌟 If you find this project useful:</h3>
+        <p>
+          <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit">
+            <img src="https://img.shields.io/badge/⭐_STAR_THIS_REPO-ffc107?style=for-the-badge&logo=github&logoColor=black" alt="Star this repo" width="300">
+          </a>
+        </p>
+        <p><strong>It takes 2 seconds and helps others discover this project! 🙏</strong></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## ✨ Features at a Glance
 
 | Feature | Description |
@@ -55,6 +75,8 @@
 | 🎯 **Reusable Components** | Buttons, Headings, Cards, and more |
 | 🔐 **Authentication** | Secure Login, Registration & Profile Management |
 | 🎨 **Beautiful UI** | Modern admin dashboard with clean design |
+| 💰 **Wallet System** | Deposit & Earning wallet for users |
+| 🌍 **Multi Language** | Built-in language translator |
 
 ---
 
@@ -86,7 +108,7 @@
       <td align="center"><img src="https://skycodelab.in/public/git/faq.png" width="400"></td>
       <td align="center"><img src="https://skycodelab.in/public/git/language-translator.png" width="400"></td>
     </tr>
-     <tr>
+    <tr>
       <td align="center"><b>📝 Membership Plans</b></td>
       <td align="center"><b>🎭 User Dashboard</b></td>
     </tr>
