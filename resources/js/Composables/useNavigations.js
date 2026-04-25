@@ -94,6 +94,22 @@ export default function useNavigations() {
   href: route('admin.ticket.index'),
   current: route().current('admin.ticket.index'),
 },
+
+ {
+            visible: user.value.is_super_admin || hasPermissions(['update_users']),
+            name: ('Membership'),
+            icon: 'mdi:finance',
+            current: route().current('admin.investment.index'),
+            children: [
+                {
+                    visible: true,
+                    name: ('Packages'),
+                    href: route('admin.investment.index'),
+                    current: route().current('admin.investment.index'),
+                },
+              
+            ],
+        },
 {
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
       name: __('Components'),

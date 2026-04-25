@@ -66,6 +66,7 @@ declare module '@vue/runtime-core' {
     SectionTitle: typeof import('./resources/js/Components/UI/SectionTitle.vue')['default']
     SelectInput: typeof import('./resources/js/Components/UI/SelectInput.vue')['default']
     Spinner: typeof import('./resources/js/Components/UI/Spinner.vue')['default']
+    StatusCell: typeof import('./resources/js/Components/StatusCell.vue')['default']
     SupportStatusCell: typeof import('./resources/js/Components/SupportStatusCell.vue')['default']
     TabButton: typeof import('./resources/js/Components/TabButton.vue')['default']
     TableAddSearch: typeof import('./resources/js/Components/UI/DataTable/TableAddSearch.vue')['default']

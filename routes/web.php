@@ -19,6 +19,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\SupportTicketController;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\Admin\InvestmentController;
 
 /* Admin Routes  */
 
@@ -35,6 +36,11 @@ Route::middleware([
 
 
 		Route::get('/heading', [AdminDashboardController::class, 'heading'])->name('admin.components.heading');
+
+		Route::get('packages', [InvestmentController::class, 'index'])->name('admin.investment.index');
+        Route::post('packages', [InvestmentController::class, 'store'])->name('admin.investment.store');
+        Route::put('packages/{id}', [InvestmentController::class, 'update'])->name('admin.investment.update');
+        Route::put('/packages/status/{id}', [InvestmentController::class, 'status'])->name('admin.investment.status');
 
 
     Route::get('faq', [FaqController::class, 'index'])->name('admin.faqs.index');
