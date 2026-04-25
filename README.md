@@ -67,7 +67,7 @@
       <td align="center"><b>🎨 Support</b></td>
     </tr>
     <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/dashbord-latest.png" width="400"></td>
+      <td align="center"><img src="https://skycodelab.in/public/git/Latest-Dashboard.png" width="400"></td>
       <td align="center"><img src="https://skycodelab.in/public/git/support.png" width="400"></td>
     </tr>
     <tr>
