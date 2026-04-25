@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="350" alt="Laravel Logo">
   
   <h1 align="center" style="margin-top: 20px; font-size: 2.8rem;">
     🚀 Laravel + Vue.js Admin Panel And User Admin
