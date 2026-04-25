@@ -3,7 +3,7 @@
   
   <h1 align="center" style="margin-top: 20px; font-size: 2.5rem;">🚀 Laravel + Vue.js Admin Panel</h1>
   
-  <p align="center">
+  <p align="center"> 
     <strong>⚡ Modern, Fast & Scalable Admin Dashboard</strong>
   </p>
 
