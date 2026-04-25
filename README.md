@@ -3,7 +3,7 @@
   
   <h1 align="center" style="margin-top: 20px; font-size: 2.5rem;">🚀 Laravel + Vue.js Admin Panel</h1>
   
-  <p align="center"> 
+  <p align="center">
     <strong>⚡ Modern, Fast & Scalable Admin Dashboard</strong>
   </p>
 
@@ -31,8 +31,8 @@
 
   <br>
 
-  <a href="https://skycodelab.in" target="_blank">
-    <img src="https://skycodelab.in/public/uploads/site/logo.png" width="180" alt="Sky Code Lab Logo">
+  <a href="https://laravel-inertia-demo.skycodelab.in/login" target="_blank">
+    <img src="https://skycodelab.in/public/git/logo.png" width="180" alt="Sky Code Lab Logo">
   </a>
 
   <br><br>
@@ -71,36 +71,36 @@
     </tr>
     <tr>
       <td align="center"><b>📊 Admin Dashboard</b></td>
-      <td align="center"><b>👥 Staff Management</b></td>
+      <td align="center"><b>👥 Support</b></td>
     </tr>
     <tr>
       <td align="center"><img src="https://skycodelab.in/public/git/admindashbord.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/staff.png" width="400"></td>
+      <td align="center"><img src="https://skycodelab.in/public/git/support.png" width="400"></td>
     </tr>
     <tr>
-      <td align="center"><b>👤 Profile</b></td>
-      <td align="center"><b>🔐 Login</b></td>
+      <td align="center"><b>👤 Login</b></td>
+      <td align="center"><b>🔐 Signup</b></td>
     </tr>
     <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/profile.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/login.png" width="400"></td>
+      <td align="center"><img src="https://skycodelab.in/public/git/login-updated.png" width="400"></td>
+      <td align="center"><img src="https://skycodelab.in/public/git/signup-updated.png" width="400"></td>
     </tr>
     <tr>
-      <td align="center"><b>📝 Signup</b></td>
-      <td align="center"><b>🎭 Role Management</b></td>
+      <td align="center"><b>📝 Faq</b></td>
+      <td align="center"><b>🎭 Language Translator</b></td>
     </tr>
     <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/signup.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/roll.png" width="400"></td>
+      <td align="center"><img src="https://skycodelab.in/public/git/faq.png" width="400"></td>
+      <td align="center"><img src="https://skycodelab.in/public/git/language-translator.png" width="400"></td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td align="center"><b>📱 Mobile Responsive</b></td>
       <td align="center"><b>🗂️ Sidebar (User/Admin)</b></td>
     </tr>
     <tr>
       <td align="center"><img src="https://skycodelab.in/public/git/mobile.png" width="250"></td>
       <td align="center"><img src="https://skycodelab.in/public/git/sidebar.png" width="250"></td>
-    </tr>
+    </tr> -->
   </table>
 </div>
 
