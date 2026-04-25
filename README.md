@@ -119,26 +119,6 @@
   </table>
 </div>
 
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-  <img src="https://laravel.com/img/logotype.min.svg" width="60" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="60" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="60" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="60" style="margin: 10px;">
-</div>
-
-| Technology | Version |
-|------------|---------|
-| Laravel | 10.45 |
-| Vue.js | 3.4.0 |
-| Inertia.js (Vue3) | 1.0.0 |
-| Tailwind CSS | 3.x |
-
----
-
 ## 📦 Installation Guide
 
 ### Prerequisites
