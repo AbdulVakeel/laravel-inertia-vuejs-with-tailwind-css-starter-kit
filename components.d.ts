@@ -80,5 +80,6 @@ declare module '@vue/runtime-core' {
     TrashedMessage: typeof import('./resources/js/Components/Application/TrashedMessage.vue')['default']
     UserProfileCard: typeof import('./resources/js/Components/UserProfileCard.vue')['default']
     ValidationErrors: typeof import('./resources/js/Components/Application/ValidationErrors.vue')['default']
+    Wallet: typeof import('./resources/js/Components/Wallet.vue')['default']
   }
 }

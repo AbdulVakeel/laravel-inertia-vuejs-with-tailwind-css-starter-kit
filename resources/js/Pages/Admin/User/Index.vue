@@ -1,9 +1,9 @@
 <script setup>
 import { computed } from 'vue'
 import { usePage } from '@inertiajs/vue3'
-
 import UserProfileCard from '@/Components/UserProfileCard.vue'
 import TabButton from '@/Components/TabButton.vue'
+import Wallet from '@/Components/Wallet.vue';
 import { Icon } from '@iconify/vue'
 
 const page = usePage()
@@ -95,6 +95,10 @@ const { form, reset, processing, onSort } = useSearchFilter(route('admin.users.i
         <!-- Email -->
         <template #cell(email)="{ item }">
           <p class="px-1 pt-2 text-sm text-light">{{ item.email }}</p>
+        </template>
+
+        <template #cell(wallet)="{ item }">
+          <Wallet :item="item" />
         </template>
 
         <!-- Mobile -->
