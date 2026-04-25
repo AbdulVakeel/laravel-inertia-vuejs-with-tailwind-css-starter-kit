@@ -63,18 +63,10 @@
   <table>
     <tr>
       <td align="center"><b>✨ Latest Dashboard</b></td>
-      <td align="center"><b>🎨 UI Components</b></td>
+      <td align="center"><b>🎨 Support</b></td>
     </tr>
     <tr>
       <td align="center"><img src="https://skycodelab.in/public/git/dashbord-latest.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/component-buttion.png" width="400"></td>
-    </tr>
-    <tr>
-      <td align="center"><b>📊 Admin Dashboard</b></td>
-      <td align="center"><b>👥 Support</b></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/admindashbord.png" width="400"></td>
       <td align="center"><img src="https://skycodelab.in/public/git/support.png" width="400"></td>
     </tr>
     <tr>
