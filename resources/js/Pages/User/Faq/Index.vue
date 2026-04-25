@@ -3,7 +3,7 @@
 
   <!-- Header -->
   <div class="flex justify-center items-center mb-24 px-4">
-    <h2 class="text-5xl md:text-6xl font-extrabold leading-tight text-center">
+    <h2 class="text-5xl md:text-6xl leading-tight text-center">
   <span class="dark:bg-gradient-to-r dark:from-sky-400 dark:via-indigo-400 dark:to-pink-400 dark:text-transparent dark:bg-clip-text">
     Any Questions?<br />
     We're Here to Help
