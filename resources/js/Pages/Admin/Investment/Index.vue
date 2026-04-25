@@ -63,7 +63,11 @@ const handleCloseModal = () => {
 						<Icon icon="mdi:pencil-outline" class="custom-icon-16" />
 					</Button>
 				</template>
-
+                
+				 <!-- Created At -->
+				<template #cell(created_at)="{ item }">
+				<CreatedAtCell :item="item" />
+				</template>
 			
 			</DataTable>
 

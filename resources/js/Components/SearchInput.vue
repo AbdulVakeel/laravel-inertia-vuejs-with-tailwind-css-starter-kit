@@ -9,7 +9,7 @@ defineProps({
 defineEmits(['update:modelValue']);
 
 const input = ref(null);
-const theadClass = 'bg-[linear-gradient(#28292e_40%,#091021_90%)]';
+
 onMounted(() => {
 	if (input.value.hasAttribute('autofocus')) {
 		input.value.focus();
@@ -29,15 +29,20 @@ export default {
 	<div class="filter-input">
 		<div class="relative">
 			<input
-				:value="modelValue"
-				@input="$emit('update:modelValue', $event.target.value)"
-				ref="input"
-				autocomplete="off"
-				type="search"
-				v-bind="$attrs"
-				:id="id"
-				:name="id"
-				:class="[theadClass,'dark:text-secondary-lighter  rounded-lg w-full text-secondary-dark  pl-10 pr-4 form-input']">
+  :value="modelValue"
+  @input="$emit('update:modelValue', $event.target.value)"
+  ref="input"
+  autocomplete="off"
+  type="search"
+  v-bind="$attrs"
+  :id="id"
+  :name="id"
+  class="rounded-lg w-full text-secondary-dark pl-10 pr-4 form-input 
+         dark:text-secondary-lighter
+           
+         md:dark:bg-secondary-dark  
+         dark:bg-gray-900"        
+/>
 
 			<div class="absolute top-0 left-0 inline-flex items-center px-2 pt-2.5 pb-2">
 				<svg

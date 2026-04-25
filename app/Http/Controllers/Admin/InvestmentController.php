@@ -18,12 +18,12 @@ class InvestmentController extends Controller
             ['key' => 'name', 'label' => 'Name', 'sortable' => true],
             ['key' => 'amount', 'label' => 'Amount', 'sortable' => true],
             ['key' => 'status', 'label' => 'Status'],
+            ['key' => 'created_at', 'label' => 'Created Date'],
             ['key' => 'actions', 'label' => 'Action'],
         ]);
 
         $data['pageTitle'] = "Membership Plans";
 
-        // optional (dropdown / modal use)
         $data['investments'] = Investment::latest()->get();
 
         $globalSearch = getGlobalSearchFilter(['name', 'amount']);

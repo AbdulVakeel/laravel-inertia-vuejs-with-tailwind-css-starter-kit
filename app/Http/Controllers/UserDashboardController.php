@@ -20,13 +20,18 @@ class UserDashboardController extends Controller
 
 
     public function dashboardUser()
-    {
-        $user = auth()->user();
-         $data['pageTitle'] = "Dashboard";
-        return inertia('User/Dashboard/UserDashboard', [
+{
+    $user = auth()->user();
+    
+    $data['pageTitle'] = "Dashboard";
+    $data['deposit_wallet'] = $user->deposit_wallet ?? 0;
+    $data['earning_wallet'] = $user->earning_wallet ?? 0;
+    
+    return inertia('User/Dashboard/UserDashboard', [
         'data' => $data,
-        ]);
-    }
+        'user' => $user,
+    ]);
+}
 
        public function faq()
     {
