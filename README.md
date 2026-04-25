@@ -1,157 +1,141 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="350" alt="Laravel Logo">
-  
-  <h1 align="center" style="margin-top: 20px; font-size: 2.8rem;">
-    🚀 Laravel + Vue.js Admin Panel And User Admin
-  </h1>
-  
-  <p align="center">
-    <strong>⚡ Modern, Fast & Scalable Admin Dashboard And User Dashboard</strong>
+
+  <!-- AUTO DARK/LIGHT LOGO -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/1%20RGB/1%20Full%20Color/laravel-logolockup-red.svg">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="350">
+  </picture>
+
+  <h1>🚀 Laravel + Vue.js Admin Panel And User Admin</h1>
+
+  <p>
+    ⚡ <strong>Modern, Fast & Scalable Dashboard</strong><br>
+    🎯 Built with Laravel + Vue + Inertia + Tailwind
   </p>
 
   <!-- ⭐ STAR CTA -->
-  <p align="center">
-    ⭐ <b>If you like this project, please give it a STAR ⭐ on GitHub — it really helps!</b>
-  </p>
+  <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit">
+    <img src="https://img.shields.io/badge/⭐%20Give%20a%20Star-Support%20Project-yellow?style=for-the-badge">
+  </a>
 
-  <p align="center">
-    <img src="https://img.shields.io/badge/Laravel-10.45-red?logo=laravel&style=for-the-badge" alt="Laravel Version">
-    <img src="https://img.shields.io/badge/Vue.js-3.4.0-4FC08D?logo=vue.js&style=for-the-badge" alt="Vue.js Version">
-    <img src="https://img.shields.io/badge/Inertia.js-1.0.0-9553E9?logo=inertia&style=for-the-badge" alt="Inertia.js">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwind-css&style=for-the-badge" alt="Tailwind CSS">
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit">
-      <img src="https://img.shields.io/github/stars/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit?style=for-the-badge" alt="Stars">
-    </a>
-    <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit/fork">
-      <img src="https://img.shields.io/github/forks/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit?style=for-the-badge" alt="Forks">
-    </a>
-  </p>
+  <p><b>💛 If you like this project, please give it a STAR ⭐</b></p>
 
   <br>
 
-  <a href="https://laravel-inertia-demo.skycodelab.in/login" target="_blank">
-    <img src="https://skycodelab.in/public/git/logo.png" width="180" alt="Demo Logo">
+  <!-- DARK STYLE BADGES -->
+  <img src="https://img.shields.io/badge/Laravel-10.x-black?logo=laravel&style=for-the-badge">
+  <img src="https://img.shields.io/badge/Vue.js-3.x-black?logo=vue.js&style=for-the-badge">
+  <img src="https://img.shields.io/badge/Inertia.js-Modern-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-black?logo=tailwind-css&style=for-the-badge">
+
+  <br><br>
+
+  <!-- GITHUB STATS -->
+  <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit">
+    <img src="https://img.shields.io/github/stars/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit?style=for-the-badge">
+  </a>
+  <a href="https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit/fork">
+    <img src="https://img.shields.io/github/forks/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit?style=for-the-badge">
   </a>
 
   <br><br>
 
-  <a href="https://www.buymeacoffee.com/abdulvakeel" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50">
+  <!-- LIVE DEMO -->
+  <a href="https://laravel-inertia-demo.skycodelab.in/login">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-blue?style=for-the-badge">
   </a>
+
+  <br><br>
+
+  <!-- SUPPORT -->
+  <a href="https://www.buymeacoffee.com/abdulvakeel">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50">
+  </a>
+
 </div>
 
 ---
 
-## ✨ Features at a Glance
+## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Modern Stack** | Laravel 10 + Vue 3 + Inertia.js + Tailwind CSS |
-| 👥 **Role Management** | Complete Admin & Staff roles with permissions |
-| 📱 **Fully Responsive** | Works perfectly on all devices |
-| 🎯 **Reusable Components** | Buttons, Headings, Cards, and more |
-| 🔐 **Authentication** | Secure Login, Registration & Profile Management |
-| 🎨 **Beautiful UI** | Modern admin dashboard with clean design |
+| 🚀 Feature | 💡 Description |
+|----------|--------------|
+| 🎨 Modern Stack | Laravel + Vue 3 + Inertia + Tailwind |
+| 👥 Role System | Admin & User Management |
+| 🔐 Authentication | Login, Register, Profile |
+| 📱 Responsive | Mobile Friendly UI |
+| ⚡ Fast | SPA Experience |
+| 🎯 Clean UI | Professional Dashboard |
 
 ---
 
 ## 🖼️ Screenshots
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>✨ Latest Dashboard</b></td>
-      <td align="center"><b>🎨 Support</b></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/dashbord-latest.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/support.png" width="400"></td>
-    </tr>
-    <tr>
-      <td align="center"><b>👤 Login</b></td>
-      <td align="center"><b>🔐 Signup</b></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/login-updated.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/signup-updated.png" width="400"></td>
-    </tr>
-    <tr>
-      <td align="center"><b>📝 Faq</b></td>
-      <td align="center"><b>🎭 Language Translator</b></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="https://skycodelab.in/public/git/faq.png" width="400"></td>
-      <td align="center"><img src="https://skycodelab.in/public/git/language-translator.png" width="400"></td>
-    </tr>
-  </table>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skycodelab.in/public/git/dashbord-latest.png">
+  <img src="https://skycodelab.in/public/git/dashbord-latest.png" width="800">
+</picture>
+
+<br><br>
+
+<img src="https://skycodelab.in/public/git/login-updated.png" width="400">
+<img src="https://skycodelab.in/public/git/signup-updated.png" width="400">
+
+<br><br>
+
+<img src="https://skycodelab.in/public/git/support.png" width="400">
+<img src="https://skycodelab.in/public/git/faq.png" width="400">
+
 </div>
 
 ---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-  <img src="https://laravel.com/img/logotype.min.svg" width="60" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/6128107?s=200&v=4" width="60" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/47703742?s=200&v=4" width="60" style="margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/67109815?s=48&v=4" width="60" style="margin: 10px;">
-</div>
-
 | Technology | Version |
-|------------|---------|
-| Laravel | 10.45 |
-| Vue.js | 3.4.0 |
-| Inertia.js (Vue3) | 1.0.0 |
+|------------|--------|
+| Laravel | 10.x |
+| Vue.js | 3.x |
+| Inertia.js | Latest |
 | Tailwind CSS | 3.x |
 
 ---
 
-## 📦 Installation Guide
-
-### Prerequisites
-- PHP >= 8.1  
-- Composer  
-- Node.js & NPM/Yarn  
-- MySQL/Database  
-
-### Step-by-Step Setup
+## 📦 Installation
 
 ```bash
-# 1. Clone the repository
+# Clone repo
 git clone https://github.com/AbdulVakeel/laravel-inertia-vuejs-with-tailwind-css-starter-kit.git
 cd laravel-inertia-vuejs-with-tailwind-css-starter-kit
 
-# 2. Install PHP dependencies
+# Install backend
 composer install
 
-# 3. Install Node dependencies
-npm install   # or yarn install
+# Install frontend
+npm install
 
-# 4. Environment configuration
+# Setup env
 cp .env.example .env
 
-# 5. Configure your database in .env file
-DB_DATABASE=your_database_name
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+# Configure DB
+# DB_DATABASE=your_db
+# DB_USERNAME=root
+# DB_PASSWORD=
 
-# 6. Generate application key
+# Generate key
 php artisan key:generate
 
-# 7. Run migrations & seeders
+# Migrate
 php artisan migrate --seed
 
-# 8. Build assets
+# Run project
 npm run dev
-
-# 9. Start development server
 php artisan serve
 
-# 10. Register as admin
-# Visit http://127.0.0.1:8000/register
+# Register Admin
+# http://127.0.0.1:8000/register
 
-# 11. Clear cache (optional)
-# Visit http://127.0.0.1:8000/clear
+# Clear Cache
+# http://127.0.0.1:8000/clear
