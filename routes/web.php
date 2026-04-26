@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\StaffController;
 use App\Http\Controllers\User\Auth\RegisteredUserController;
 use App\Http\Controllers\UserDashboardController;
+use App\Http\Controllers\ReportsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Admin\AdminDashboardController;
@@ -20,7 +21,7 @@ use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\SupportTicketController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\Admin\InvestmentController;
-
+use App\Http\Controllers\Admin\ReportController;
 /* Admin Routes  */
 
 Route::middleware([
@@ -38,6 +39,10 @@ Route::middleware([
         Route::post('packages', [InvestmentController::class, 'store'])->name('admin.investment.store');
         Route::put('packages/{id}', [InvestmentController::class, 'update'])->name('admin.investment.update');
         Route::put('/packages/status/{id}', [InvestmentController::class, 'status'])->name('admin.investment.status');
+
+		 Route::controller(ReportController::class)->group(function () {
+            Route::get('report-transaction', 'transaction')->name('admin.report.transaction');
+        });
 
 
     Route::get('faq', [FaqController::class, 'index'])->name('admin.faqs.index');
@@ -90,7 +95,7 @@ Route::middleware([
 	Route::prefix('user')->group(function () {
 		Route::get('/dashboard', [UserDashboardController::class, 'dashboardUser'])->name('user.dashboard');
 		Route::get('/faq', [UserDashboardController::class, 'faq'])->name('user.faq.index');
-
+        Route::get('/transactions/log', [ReportsController::class, 'transactionsLog'])->name('user.reports.transaction');
 		  Route::controller(TicketController::class)
             ->prefix('ticket')
             ->name('user.ticket.')

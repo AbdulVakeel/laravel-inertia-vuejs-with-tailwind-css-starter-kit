@@ -21,6 +21,24 @@ export default function useNavigations() {
       href: route('user.dashboard'),
       current: route().current('home') || route().current('user.dashboard'),
     },
+
+      {
+            visible: true,
+            name: ('Reports'),
+            icon: 'mdi:file-report',
+            current:  route().current('user.reports.transaction'),
+            children: [
+                {
+                    visible: true,
+                    name: ('Transactions'),
+                    href: route('user.reports.transaction'),
+                    current: route().current('user.reports.transaction'),
+                },
+
+
+            ],
+        },
+
     {
       visible: true,
       name: _('Faq'),
@@ -92,6 +110,22 @@ export default function useNavigations() {
         },
       ],
     },
+
+     {
+           visible: user.value.is_super_admin || hasPermissions(['update_users']),
+            name: ('Reports'),
+            icon: 'mdi:file-report',
+            current: route().current('admin.report.transaction'),
+            children: [
+                {
+                    visible: true,
+                    name: ('Transactions Log'),
+                    href: route('admin.report.transaction'),
+                    current: route().current('admin.report.transaction'),
+                },
+
+            ],
+        },
 
     {
       visible: true,
