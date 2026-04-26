@@ -31,6 +31,8 @@ Route::middleware([
 		/* ! admin dashboard  */
 		Route::get('/dashboard', [AdminDashboardController::class, 'dashboard'])->name('admin.dashboard');
 		Route::get('/allUsers', [ManageUserController::class, 'index'])->name('admin.users.index');
+		Route::get('/user/{id}', [ManageUserController::class, 'userInfo'])->name('admin.users-detail');
+        Route::post('update-wallet', [ManageUserController::class, 'updateUserWallet'])->name('admin.update-wallet');
 		Route::get('/buttion', [AdminDashboardController::class, 'buttion'])->name('admin.components.buttion');
 		Route::get('packages', [InvestmentController::class, 'index'])->name('admin.investment.index');
         Route::post('packages', [InvestmentController::class, 'store'])->name('admin.investment.store');

@@ -110,6 +110,14 @@ const { form, reset, processing, onSort } = useSearchFilter(route('admin.users.i
         <template #cell(created_at)="{ item }">
           <CreatedAtCell :item="item" />
         </template>
+
+         <template #cell(actions)="{ item }">
+          <div class="flex items-center">
+            <Link intent="text" size="xs" :href="route('admin.users-detail', item.id)">
+              <Icon icon="mdi:pencil-outline" class="custom-icon-16" />
+            </Link>
+          </div>
+        </template>
       </DataTable>
 
       <!-- Pagination -->

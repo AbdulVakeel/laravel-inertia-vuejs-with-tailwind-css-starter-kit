@@ -1,9 +1,9 @@
 <template>
-	<div class="px-2 py-2">
-    <p class="text-sm whitespace-nowrap">{{('Deposit')}} {{ formatCurrencySymbol(item.deposit_wallet) }}</p>
-    <p class="text-sm whitespace-nowrap"> {{('Earnings')}} {{ formatCurrencySymbol(item.earning_wallet) }}</p>
+  <div class="px-2 py-2">
+    <p class="text-sm whitespace-nowrap">{{ __('Deposit') }} {{ formatCurrencySymbol(item.deposit_wallet) }}</p>
+    <p class="text-sm whitespace-nowrap">{{ __('Earnings') }} {{ formatCurrencySymbol(item.earning_wallet) }}</p>
   </div>
-  </template>
+</template>
   
   <script setup>
   import { defineProps } from 'vue';
