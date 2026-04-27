@@ -79,17 +79,18 @@ export default function useNavigations() {
       visible: user.value.is_super_admin || hasPermissions(['update_users']),
       name: __('Manage Staffs'),
       icon: 'mdi:user',
-      current: route().current('admin.role.*') || route().current('admin.staffs.index*'),
+      // current: route().current('admin.role.*') || route().current('admin.staffs.index*'),
+      current: route().current('admin.staffs.index*'),
       children: [
+        // {
+        //   visible: true,
+        //   name: __('Roles & Permissions'),
+        //   href: route('admin.role.index'),
+        //   current: route().current('admin.role.*'),
+        // },
         {
           visible: true,
-          name: __('Roles & Permissions'),
-          href: route('admin.role.index'),
-          current: route().current('admin.role.*'),
-        },
-        {
-          visible: true,
-          name: __('Staffs'),
+          name: __('Create Staffs'),
           href: route('admin.staffs.index'),
           current: route().current('admin.staffs.index*'),
         },

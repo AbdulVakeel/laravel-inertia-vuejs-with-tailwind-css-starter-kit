@@ -36,8 +36,8 @@ class StaffController extends Controller
             ['key' => 'username', 'label' => 'Username', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'first_name', 'label' => 'First Name', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'last_name', 'label' => 'Last Name', 'sortable' => true, 'searchable' => false, 'show' => true],
-            ['key' => 'email', 'label' => 'email', 'sortable' => true, 'searchable' => false, 'show' => true],
-            ['key' => 'mobile', 'label' => 'mobile', 'sortable' => true, 'searchable' => false, 'show' => true],
+            ['key' => 'email', 'label' => 'Email', 'sortable' => true, 'searchable' => false, 'show' => true],
+            ['key' => 'mobile', 'label' => 'Mobile', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'role', 'label' => 'Role', 'sortable' => true, 'searchable' => false, 'show' => true],
             ['key' => 'actions', 'label' => 'Action', 'sortable' => true, 'searchable' => false, 'show' => true],
 
@@ -156,6 +156,7 @@ class StaffController extends Controller
         }
     }
 
+    
         /***********************************
      * End THIS IS A Staff  Controller *
      ***********************************/

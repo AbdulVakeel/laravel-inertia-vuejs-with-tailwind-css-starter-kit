@@ -23,13 +23,13 @@ const { form, reset, processing, onSort, dateRange } = useSearchFilter(route('ad
 			<LoadingProgressBar v-if="processing" />
 
 			<DataTable :items="items.data" :columns="columns" class="rounded-xl" @onSort="onSort">
-				<template #cell(actions)="{ item }">
+				<!-- <template #cell(actions)="{ item }">
 					<div v-if="item.name !== 'super_admin'" class="flex justify-end items-center px-5">
 						<Button intent="text" siz="xs" :href="route('admin.role.edit', item.id)">
 							<Icon name="edit" class="h-4" />
 						</Button>
 					</div>
-				</template>
+				</template> -->
 			</DataTable>
 
 			<DataTablePagination :items="items" v-model="form.perPage" />

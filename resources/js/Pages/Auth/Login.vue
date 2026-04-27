@@ -22,7 +22,16 @@ const form = useForm({
     remember: false,
 });
 
+// Demo credentials fillers
+const setAdminCredentials = () => {
+    form.identity = 'admin@test.com'
+    form.password = '123456'
+}
 
+const setUserCredentials = () => {
+    form.identity = 'user@test.com'
+    form.password = '123456'
+}
 /* End */
 
 const submit = () => {
@@ -143,6 +152,44 @@ const showPasswordText = ref(false);
 
                     </form>
 
+                    <!-- Divider -->
+                    <div class="relative my-6">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300 dark:border-gray-600"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400">
+                                Quick Login
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Demo Buttons -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <button
+                            type="button"
+                            @click="setAdminCredentials"
+                            class="py-2 px-4 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-[1.02]"
+                        >
+                            👑 Admin Login
+                        </button>
+                        <button
+                            type="button"
+                            @click="setUserCredentials"
+                            class="py-2 px-4 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-[1.02]"
+                        >
+                            👤 User Login
+                        </button>
+                    </div>
+
+                    <!-- Demo Credentials Hint -->
+                    <div class="mt-4 p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600">
+                        <p class="text-xs text-center text-gray-500 dark:text-gray-400">
+                            <span class="font-semibold">Demo Credentials:</span><br>
+                            Admin: admin@test.com / 123456<br>
+                            User: user@test.com / 123456
+                        </p>
+                    </div>
                 </div>
             </div>
 

@@ -22,7 +22,21 @@ use App\Http\Controllers\Admin\SupportTicketController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\Admin\InvestmentController;
 use App\Http\Controllers\Admin\ReportController;
+use Inertia\Inertia;
+use App\Http\Controllers\HomeController;
 /* Admin Routes  */
+
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/leaderboard', function () {
+    return Inertia::render('Leaderboard');
+})->name('leaderboard');
+
+Route::get('/how-it-works', function () {
+    return Inertia::render('HowItWorks');
+})->name('how-it-works');
+
 
 Route::middleware([
 	'auth:sanctum',
@@ -74,14 +88,15 @@ Route::middleware([
 	Route::get('/manage/staffs', [StaffController::class, 'index'])->name('admin.staffs.index');
 	Route::post('/manage/staffs', [StaffController::class, 'store'])->name('admin.staffs.store');
 	Route::put('/staffs/{id}', [StaffController::class, 'update'])->name('admin.staffs.update');
+	
 
 	
 	});
 
 	
-Route::get('/', function () {
-	return to_route('user.dashboard');
-})->name('home');
+// Route::get('/', function () {
+// 	return to_route('user.dashboard');
+// })->name('home');
 
 /* User Routes */
 
