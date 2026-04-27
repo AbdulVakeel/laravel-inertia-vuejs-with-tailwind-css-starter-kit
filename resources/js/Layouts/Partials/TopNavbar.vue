@@ -42,12 +42,12 @@ onMounted(() => {
 	<div :class="[
 		'sticky top-0 z-10 flex-shrink-0 flex shadow ',
 		scrollBg
-			? 'h-16 bg-white dark:bg-secondary-darker dark:text-white'
-			: 'h-16 backdrop-blur-sm bg-white/30 dark:backdrop-blur-md dark:bg-secondary-darker/50',
+			? 'h-16 bg-white dark:bg-secondary-bgsidebar dark:text-white'
+			: 'h-16 backdrop-blur-sm bg-white/30 bg-secondary-bgsidebar',
 	]">
 		<MobileMenuToggler @openMobileMenu="emit('openMobileMenu')" />
 
-		<div class="flex-1 px-4 flex justify-between items-center bg-white dark:bg-secondary-dark text-light">
+		<div class="flex-1 px-4 flex justify-between items-center bg-white dark:bg-secondary-bgsidebar text-light">
 
 
 <div></div>

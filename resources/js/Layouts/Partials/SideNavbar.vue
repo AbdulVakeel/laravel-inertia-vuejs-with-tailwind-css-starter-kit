@@ -2,7 +2,6 @@
 import NavItem from './NavItem.vue';
 import SidebarToggler from './SidebarToggler.vue';
 import { usePage } from '@inertiajs/vue3';
-import AdminButton from './AdminButton.vue';
 import {useStorage} from "@vueuse/core";
 import useNavigations from '@/Composables/useNavigations.js';
 
@@ -29,7 +28,7 @@ const navItems = computed(() => menuType === 'admin' ? navigations.adminNavItems
 				? 'hover:absolute hover:md:w-64 md:w-14 hover:backdrop-blur dark:hover:bg-secondary-darker/70 hover:bg-secondary-darker/[100%]'
 				: '',
 		]">
-		<div class="flex items-center justify-between  border-b-2 border-secondary border-dotted p-2">
+		<div class="flex items-center justify-between  border-b-2 border-secondary border-dotted p-1">
 			<Link :href="route('admin.dashboard')">
 				<div class="flex items-center flex-shrink-0 px-4 h-14">
 					<ApplicationLogo
