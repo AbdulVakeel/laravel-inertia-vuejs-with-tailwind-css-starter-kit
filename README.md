@@ -63,6 +63,30 @@
 </p>
 
 ---
+## 📱 Progressive Web App (PWA)
+
+This project includes **Progressive Web App (PWA)** support, allowing users to install and use the application like a native mobile app.
+
+### ✨ Features
+
+- 📲 Install directly from the browser  
+- ⚡ Fast loading with cached assets  
+- 📴 Basic offline support  
+- 🖥️ Standalone mode (no browser UI)  
+- 🚀 App-like user experience  
+
+### 📥 Installation
+
+1. Open the application in your browser  
+2. On the login page, an **Install App** popup will appear  
+3. Click **Install Now**  
+4. The app will be added to your home screen  
+
+### 📌 Supported Platforms
+
+- ✅ Android (Chrome, Edge)  
+- ✅ Desktop (Chrome, Edge)  
+- ⚠️ iOS (Safari – use **“Add to Home Screen”**)  
 
 ## 🔑 Demo Credentials
 
@@ -148,11 +172,11 @@ This starter kit gives you everything pre-built:
 <td align="center"><img src="https://skycodelab.in/public/git/User-Dashboard-Latest.png" width="400"></td>
 </tr>
 <tr>
-<td align="center"><b>👤 Login</b></td>
+<td align="center"><b>👤 Login With PWA Apps</b></td>
 <td align="center"><b>🔐 Signup</b></td>
 </tr>
 <tr>
-<td align="center"><img src="https://skycodelab.in/public/git/login-updated.png" width="400"></td>
+<td align="center"><img src="https://skycodelab.in/public/git/pwa.png" width="400"></td>
 <td align="center"><img src="https://skycodelab.in/public/git/signup-updated.png" width="400"></td>
 </tr>
 <tr>

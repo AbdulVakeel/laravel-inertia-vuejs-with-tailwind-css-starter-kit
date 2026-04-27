@@ -1,0 +1,16 @@
+{
+  "name": "SSK",
+  "short_name": "SSK",
+  "start_url": "/",
+  "display": "standalone", 
+  "background_color": "#212b36",
+  "theme_color": "#f78109",
+  "icons": [
+    {
+      "src": "pwa.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

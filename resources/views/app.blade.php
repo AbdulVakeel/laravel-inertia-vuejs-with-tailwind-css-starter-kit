@@ -14,6 +14,7 @@
 		<link rel="icon" href="{{ url('uploads/site/favicon.png') }}">
 		<link rel="shortcut icon" href="{{ url('uploads/site/favicon.png') }}" type="image/x-icon">
 		<link rel="apple-touch-icon" href="{{ url('uploads/site/logo.png') }}">
+		 <link rel="manifest" href="/manifest.json">
 
 		<!-- Scripts -->
 		@routes

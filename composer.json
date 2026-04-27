@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.6.8",
         "intervention/image": "^2.7",
+        "ladumor/laravel-pwa": "0.0.4",
         "laravel/breeze": "^1.28",
         "laravel/framework": "^10.45.1",
         "laravel/sanctum": "^3.2",

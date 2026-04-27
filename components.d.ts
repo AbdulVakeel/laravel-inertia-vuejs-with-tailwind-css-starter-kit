@@ -57,6 +57,7 @@ declare module '@vue/runtime-core' {
     Pagination: typeof import('./resources/js/Components/UI/Pagination.vue')['default']
     PrimaryButton: typeof import('./resources/js/Components/UI/PrimaryButton.vue')['default']
     PriorityCell: typeof import('./resources/js/Components/PriorityCell.vue')['default']
+    PwaApp: typeof import('./resources/js/Components/PwaApp.vue')['default']
     RecordsPerPageListBox: typeof import('./resources/js/Components/UI/RecordsPerPageListBox.vue')['default']
     ResponsiveNavLink: typeof import('./resources/js/Components/UI/ResponsiveNavLink.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

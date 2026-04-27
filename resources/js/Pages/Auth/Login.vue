@@ -9,6 +9,7 @@
 import { ref } from 'vue';
 import { useForm } from '@inertiajs/vue3';
 import ThemeModeToggler from './Partials/ThemeModeToggler.vue';
+import PwaApp from '@/Components/PwaApp.vue';
 
 defineProps({
     canResetPassword: Boolean,
@@ -42,6 +43,7 @@ const showPasswordText = ref(false);
     <Head :title="__('Log in')" />
 
     <AuthenticationCard>
+        <PwaApp />
 
         <section class="min-h-screen flex items-center justify-center p-4">
 
@@ -141,9 +143,7 @@ const showPasswordText = ref(false);
 
                     </form>
 
-                  
-                  
-                </div>
+                     </div>
             </div>
 
         </section>
