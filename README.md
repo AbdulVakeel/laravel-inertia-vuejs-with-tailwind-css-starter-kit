@@ -131,6 +131,15 @@ This starter kit gives you everything pre-built:
 <div align="center">
 <table>
 <tr>
+<td align="center"><b>✨ Home Page 1</b></td>
+<td align="center"><b>🎨 Home Page 2</b></td>
+</tr>
+<tr>
+<td align="center"><img src="https://skycodelab.in/public/git/home1.png" width="400"></td>
+<td align="center"><img src="https://skycodelab.in/public/git/home2.png" width="400"></td>
+</tr>
+
+<tr>
 <td align="center"><b>✨ Admin Dashboard</b></td>
 <td align="center"><b>🎨 User Dashboard</b></td>
 </tr>
