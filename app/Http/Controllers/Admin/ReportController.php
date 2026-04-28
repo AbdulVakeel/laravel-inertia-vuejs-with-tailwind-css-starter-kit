@@ -21,8 +21,8 @@ class ReportController extends Controller
             ['key' => 'transaction_id', 'label' => 'Transaction', 'sortable' => true, 'searchable' => false],
             ['key' => 'amount', 'label' => 'Amount', 'sortable' => true, 'searchable' => false],
             ['key' => 'balance', 'label' => 'Balance', 'sortable' => true, 'searchable' => false],
-            ['key' => 'type', 'label' => 'Type', 'sortable' => true, 'searchable' => false],
-            ['key' => 'wallet', 'label' => 'Wallet', 'sortable' => true, 'searchable' => false],
+            // ['key' => 'type', 'label' => 'Type', 'sortable' => true, 'searchable' => false],
+            // ['key' => 'wallet', 'label' => 'Wallet', 'sortable' => true, 'searchable' => false],
             ['key' => 'description', 'label' => 'Description', 'sortable' => false, 'searchable' => false,],
             ['key' => 'created_at', 'label' => 'Date', 'sortable' => true, 'searchable' => false],
         ]);
