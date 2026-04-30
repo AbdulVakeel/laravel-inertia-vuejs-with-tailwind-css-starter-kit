@@ -1,11 +1,11 @@
 <div align="center">
 
 <h1 align="center" style="margin-top: 20px; font-size: 2.8rem;">
-🚀 Laravel Inertia Vue Admin Panel (Production Ready)
+🚀 Laravel Inertia Vue Admin Panel : (Production Ready) 
 </h1>
 
 <p align="center">
-<strong>🔥 Complete Admin + User Dashboard with Auth, Roles, Wallet & Modern UI</strong>
+<strong>🔥 Complete Admin + User Dashboard with Auth, Roles, Wallet & Modern UI And MLM</strong>
 </p>
 
 <p align="center">
@@ -266,8 +266,9 @@ If this project helps you:
 
 * [ ] Dark Mode
 * [ ] API Ready Version
-* [ ] SaaS Billing Integration
-* [ ] Mobile App Support
+* [ ] Membership Plan
+* [ ] Support Ticket System
+* [ ] Mobile App Pwa Support
 * [ ] Advanced Role Permissions UI
 
 ---
