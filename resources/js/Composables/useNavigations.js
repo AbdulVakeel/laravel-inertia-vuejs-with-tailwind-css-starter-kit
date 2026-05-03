@@ -39,6 +39,29 @@ export default function useNavigations() {
             ],
         },
 
+          {
+            visible: true,
+            name: ('Membership'),
+            icon: 'mdi:chart-line',
+            current: route().current('invest.investment') || route().current('reports.invest'),
+            children: [
+                {
+                    visible: true,
+                    name: ('Packages'),
+                    href: route('invest.investment'),
+                    current: route().current('invest.investment'),
+                },
+                {
+                  visible: true,
+                  name: ('Packages Log'),
+                  href: route('reports.invest'),
+                  current: route().current('reports.invest'),
+                },
+               
+            ],
+        },
+
+
     {
       visible: true,
       name: _('Faq'),

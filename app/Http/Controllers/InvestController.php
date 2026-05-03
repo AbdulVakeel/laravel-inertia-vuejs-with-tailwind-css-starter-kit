@@ -9,7 +9,7 @@ use Spatie\QueryBuilder\QueryBuilder;
 use App\Models\Invest;
 use Inertia\Inertia;
 
-class InvestmentController extends Controller
+class InvestController extends Controller
 {
     public function index()
     {
@@ -45,7 +45,7 @@ class InvestmentController extends Controller
         $investmentPlugin = new InvestmentPlugin($user, $investment);
         $investmentPlugin->invest($amount, $walletType);
 
-        return to_route('user.reports.invest')->with('success', 'Subscription successful!');
+       return to_route('reports.invest')->with('success', 'Subscription successful!');
     }
 
     private function isInvalidInvestmentAmount($amount)
@@ -61,7 +61,7 @@ class InvestmentController extends Controller
             ['key' => 'investment.name', 'label' => 'Package', 'sortable' => false, 'searchable' => false, 'show' => true],
             ['key' => 'amount', 'label' => 'Amount', 'sortable' => true, 'searchable' => true, 'show' => true],
             ['key' => 'status', 'label' => 'Status', 'sortable' => false, 'searchable' => false, 'show' => true],
-            ['key' => 'expiry_date', 'label' => 'End Date', 'sortable' => true, 'searchable' => true, 'show' => true],
+            // ['key' => 'expiry_date', 'label' => 'End Date', 'sortable' => true, 'searchable' => true, 'show' => true],
         ]);
 
         $globalSearch = getGlobalSearchFilter(['amount']);

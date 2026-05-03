@@ -12,19 +12,25 @@ export default function useCurrencyFormatter() {
   const formatCurrencySymbol = (amount, precision = 2, userCurrency = currencySymbol) => {
     let curr = userCurrency ?? ''; 
     let val = formatNumber(amount, precision); 
-    return `${curr}${val}`;  // 🔥 CHANGE: pehle symbol, phir number
+    return `${curr}${val}`;
   };
   
-  // Symbol baad mein ( 300.00 $ ) - agar chahiye to
+  // Symbol baad mein ( 300.00 $ )
   const formatCurrencySuffix = (amount, precision = 2, userCurrency = currencySymbol) => {
     let curr = userCurrency ?? ''; 
     let val = formatNumber(amount, precision); 
     return `${val} ${curr}`;
   };
 
+  // ========== ADD THIS: formatCurrency function ==========
+  const formatCurrency = (amount, precision = 2) => {
+    return formatCurrencySymbol(amount, precision);
+  };
+
   return {
-    formatCurrencySymbol,  // Returns "$300.00"
-    formatCurrencySuffix,  // Returns "300.00 $"
-    formatNumber,          // Returns "300.00"
+    formatCurrency,        // ← ADD THIS
+    formatCurrencySymbol,
+    formatCurrencySuffix,
+    formatNumber,
   };
 }

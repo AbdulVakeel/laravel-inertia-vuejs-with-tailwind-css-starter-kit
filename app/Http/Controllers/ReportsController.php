@@ -38,7 +38,7 @@ class ReportsController extends Controller
             });
         $data['items'] = $query->paginate(request()->perPage ?? getPaginate())->withQueryString();
 
-        $data['moduleTitle'] = "Transaction Logs";
+        $data['pageTitle'] = "Transaction Logs";
         $user = auth()->user();
 
         return Inertia::render('User/Reports/Transaction', [

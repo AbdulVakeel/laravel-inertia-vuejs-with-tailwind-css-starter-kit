@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function index()
 {
 
-    $data['moduleTitle'] = 'Home';
+    $data['pageTitle'] = 'Home';
 
      return Inertia::render('Home', [
         'data' => $data,

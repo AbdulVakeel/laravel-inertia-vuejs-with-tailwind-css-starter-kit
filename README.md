@@ -123,7 +123,6 @@ This starter kit gives you everything pre-built:
 * MLM / Investment Platform
 * Crypto Dashboard
 * User Management System
-* Internal Company Tools
 
 ---
 
@@ -203,6 +202,13 @@ This starter kit gives you everything pre-built:
 <td align="center"><img src="https://skycodelab.in/public/git/Admin-Report.png" width="400"></td>
 <td align="center"><img src="https://skycodelab.in/public/git/User-Report.png" width="400"></td>
 </tr>
+<td align="center"><b>📊 User Investment</b></td>
+<td align="center"><b>📊 User Investment Report</b></td>
+</tr>
+<tr>
+<td align="center"><img src="https://skycodelab.in/public/git/user-investment.png" width="400"></td>
+<td align="center"><img src="https://skycodelab.in/public/git/user-Investment-log.png" width="400"></td>
+</tr>
 </table>
 </div>
 
@@ -241,18 +247,6 @@ php artisan serve
 
 👉 Open: http://127.0.0.1:8000
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-* Fork the repo
-* Create a new branch
-* Submit a PR
-
----
-
 ## 🌟 Support
 
 If this project helps you:
@@ -270,6 +264,7 @@ If this project helps you:
 * [ ] Support Ticket System
 * [ ] Mobile App Pwa Support
 * [ ] Advanced Role Permissions UI
+* [ ] Language Translator
 
 ---
 

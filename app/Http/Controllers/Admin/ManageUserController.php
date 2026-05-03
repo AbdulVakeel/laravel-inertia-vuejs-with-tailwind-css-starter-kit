@@ -80,7 +80,7 @@ class ManageUserController extends Controller
     $user = User::findOrFail($id);
     
     $data = [
-        'moduleTitle' => 'Manage User',
+        'pageTitle' => 'Manage User',
         'earning_wallet' => $user->earning_wallet,
         'deposit_wallet' => $user->deposit_wallet,
         'user' => $user, 

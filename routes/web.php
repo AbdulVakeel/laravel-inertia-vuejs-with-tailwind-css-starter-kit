@@ -24,6 +24,7 @@ use App\Http\Controllers\Admin\InvestmentController;
 use App\Http\Controllers\Admin\ReportController;
 use Inertia\Inertia;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InvestController;
 /* Admin Routes  */
 
 
@@ -123,6 +124,10 @@ Route::middleware([
                 Route::post('close/{id}', 'close')->name('close');
                 Route::get('download/{attachment_id}', 'ticketDownload')->name('download');
             });
+
+		 Route::get('/reports/log', [InvestController::class, 'investLog'])->name('reports.invest');
+		Route::get('/invest/investment', [InvestController::class, 'index'])->name('invest.investment'); 
+		Route::post('/invest/investment', [InvestController::class, 'store'])->name('invest.investment.store');
 
 		// Profile
 		Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show')
