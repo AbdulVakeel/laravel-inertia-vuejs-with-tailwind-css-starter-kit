@@ -29,10 +29,10 @@ class InvestController extends Controller
             'wallet_type'   => 'required|string',
         ]);
 
-        $user = auth()->user();
-        $investment = Investment::active()->findOrFail($request->investment_id);
-        $amount = $request->amount;
-        $walletType = $request->wallet_type;
+        $user        = auth()->user();
+        $investment  = Investment::active()->findOrFail($request->investment_id);
+        $amount      = $request->amount;
+        $walletType  = $request->wallet_type;
 
         if ($this->isInvalidInvestmentAmount($amount)) {
             return back()->with('error', 'Invalid investment amount.');
@@ -45,7 +45,7 @@ class InvestController extends Controller
         $investmentPlugin = new InvestmentPlugin($user, $investment);
         $investmentPlugin->invest($amount, $walletType);
 
-       return to_route('reports.invest')->with('success', 'Subscription successful!');
+        return to_route('reports.invest')->with('success', 'Subscription successful!');
     }
 
     private function isInvalidInvestmentAmount($amount)
@@ -72,7 +72,10 @@ class InvestController extends Controller
             ->dateFilter('invests.created_at')
             ->defaultSort('-created_at')
             ->allowedSorts($columns->map->key->all())
-            ->allowedFilters([...$columns->map->key->all(), $globalSearch])
+            ->allowedFilters([
+                ...$columns->map->key->all(),
+                $globalSearch
+            ])
             ->when(request()->get('scope'), function ($query, $scope) {
                 if (method_exists(Invest::class, 'scope' . ucfirst($scope))) {
                     $query->$scope();
@@ -85,9 +88,9 @@ class InvestController extends Controller
         $user = auth()->user();
 
         return Inertia::render('User/Reports/Invest', [
-            'items' => $items,
-            "columns" => $columns,
-            "data" => $data,
+            'items'   => $items,
+            'columns' => $columns,
+            'data'    => $data,
         ]);
     }
 }
