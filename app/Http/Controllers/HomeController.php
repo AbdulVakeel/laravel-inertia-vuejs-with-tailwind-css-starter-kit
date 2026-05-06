@@ -9,15 +9,12 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class HomeController extends Controller
 {
-
     public function index()
-{
+    {
+        $data['pageTitle'] = 'Home';
 
-    $data['pageTitle'] = 'Home';
-
-     return Inertia::render('Home', [
-        'data' => $data,
-    ]);
-}
-
+        return Inertia::render('Home', [
+            'data' => $data,
+        ]);
+    }
 }
