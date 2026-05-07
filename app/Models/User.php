@@ -13,6 +13,12 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
+    /*
+    |--------------------------------------------------------------------------
+    | Traits
+    |--------------------------------------------------------------------------
+    */
+
     use HasApiTokens;
     use HasFactory;
     use HasProfilePhoto;
@@ -20,41 +26,42 @@ class User extends Authenticatable
     use HasRoles;
     use QueryFilter;
 
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+    /*
+    |--------------------------------------------------------------------------
+    | Mass Assignable Attributes
+    |--------------------------------------------------------------------------
+    */
 
     protected $guarded = [];
 
+    /*
+    |--------------------------------------------------------------------------
+    | Hidden Attributes
+    |--------------------------------------------------------------------------
+    */
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
+    /*
+    |--------------------------------------------------------------------------
+    | Attribute Casting
+    |--------------------------------------------------------------------------
+    */
+
     protected $casts = [
         'email_verified_at' => 'datetime',
         'ver_code_send_at' => 'datetime',
     ];
 
-    /**
-     * The accessors to append to the model's array form.
-     *
-     * @var array<int, string>
-     */
+    /*
+    |--------------------------------------------------------------------------
+    | Appended Attributes
+    |--------------------------------------------------------------------------
+    */
+
     protected $appends = [
         'profile_photo_url',
         'is_super_admin',
@@ -65,9 +72,22 @@ class User extends Authenticatable
         'allRoles',
     ];
 
-    protected $with = ['roles', 'permissions'];
+    /*
+    |--------------------------------------------------------------------------
+    | Auto Eager Loading
+    |--------------------------------------------------------------------------
+    */
 
+    protected $with = [
+        'roles',
+        'permissions'
+    ];
 
+    /*
+    |--------------------------------------------------------------------------
+    | Accessors
+    |--------------------------------------------------------------------------
+    */
 
     public function fullname(): Attribute
     {
@@ -75,29 +95,6 @@ class User extends Authenticatable
             get: fn () => $this->first_name . ' ' . $this->last_name,
         );
     }
-
-
-    public function scopeDoesNotAdminUser($query)
-    {
-        $query->whereHas('roles', function ($query) {
-            $query->whereNotIn('name', ['super_admin', 'staff', 'manager']);
-        });
-    }
-
-    public function scopeOnlyAdminUser($query)
-    {
-        $query->whereHas('roles', function ($query) {
-            $query->whereIn('name', ['super_admin', 'staff', 'manager']);
-        });
-    }
-
-
-    /**
-     * Send a password reset notification to the user.
-     *
-     * @param  string  $token
-     * @return void
-     */
 
     protected function isSuperAdmin(): Attribute
     {
@@ -113,6 +110,11 @@ class User extends Authenticatable
         );
     }
 
+    /*
+    |--------------------------------------------------------------------------
+    | Roles & Permissions
+    |--------------------------------------------------------------------------
+    */
 
     public function getAllRolesAttribute()
     {
@@ -126,18 +128,52 @@ class User extends Authenticatable
 
     public function getAllPermissionsAttribute()
     {
-        return $this->getAllPermissions()->map(function ($pr) {
-            return $pr['name'];
+        return $this->getAllPermissions()->map(function ($permission) {
+            return $permission['name'];
         });
     }
 
-       public function scopeDoesNotHaveAdminRole($query)
+    /*
+    |--------------------------------------------------------------------------
+    | Query Scopes
+    |--------------------------------------------------------------------------
+    */
+
+    public function scopeDoesNotAdminUser($query)
+    {
+        $query->whereHas('roles', function ($query) {
+            $query->whereNotIn('name', [
+                'super_admin',
+                'staff',
+                'manager'
+            ]);
+        });
+    }
+
+    public function scopeOnlyAdminUser($query)
+    {
+        $query->whereHas('roles', function ($query) {
+            $query->whereIn('name', [
+                'super_admin',
+                'staff',
+                'manager'
+            ]);
+        });
+    }
+
+    public function scopeDoesNotHaveAdminRole($query)
     {
         return $query->whereHas('roles', function ($query) {
             $query->where('name', '!=', 'super_admin');
         });
     }
 
+    public function scopeHasNotSuperAdmin($query)
+    {
+        return $query->whereHas('roles', function ($query) {
+            $query->where('name', '!=', 'super_admin');
+        });
+    }
 
     public function scopeActive($query)
     {
@@ -149,10 +185,22 @@ class User extends Authenticatable
         return $query->where('status', 0);
     }
 
+    public function scopeEmailVerified($query)
+    {
+        return $query->where('ev', 1);
+    }
+
     public function scopeEmailUnverified($query)
     {
         return $query->where('ev', 0);
     }
+
+    /*
+    |--------------------------------------------------------------------------
+    | Relationships
+    |--------------------------------------------------------------------------
+    */
+
     /**
      * Get user's support tickets
      */
@@ -160,20 +208,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(SupportTicket::class);
     }
-
-
-    public function scopeEmailVerified($query)
-    {
-        return $query->where('ev', 1);
-    }
-
-    public function scopeHasNotSuperAdmin($query)
-    {
-        return $query->whereHas('roles', function ($query) {
-            $query->where('name', '!=', 'super_admin');
-        });
-    }
-
-
- 
 }
