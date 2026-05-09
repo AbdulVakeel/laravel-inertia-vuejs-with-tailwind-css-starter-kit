@@ -16,28 +16,34 @@ class Transaction extends Model
         'transaction_id',
         'description',
         'balance',
-        'wallet',  
+        'wallet',
     ];
 
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-    
+
     public function getWalletDisplayNameAttribute()
     {
         $names = [
             'earning_wallet' => 'Earning Wallet',
             'deposit_wallet' => 'Deposit Wallet',
         ];
-        
-        return $names[$this->wallet] ?? ucfirst(str_replace('_', ' ', $this->wallet));
+
+        return $names[$this->wallet]
+            ?? ucfirst(str_replace('_', ' ', $this->wallet));
     }
-    
+
     public function getFormattedAmountAttribute()
     {
         $symbol = "$";
-        $prefix = $this->type === 'admin_fund_credit' ? '+' : '-';
-        return "{$prefix}{$symbol}" . number_format($this->amount, 2);
+
+        $prefix = $this->type === 'admin_fund_credit'
+            ? '+'
+            : '-';
+
+        return "{$prefix}{$symbol}"
+            . number_format($this->amount, 2);
     }
 }
