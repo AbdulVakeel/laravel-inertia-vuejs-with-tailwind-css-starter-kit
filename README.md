@@ -274,6 +274,8 @@ If this project helps you:
 * [ ] Mobile App Pwa Support
 * [ ] Advanced Role Permissions UI
 * [ ] Language Translator
+* [ ] Admin Panel
+* [ ] User Panel
 
 ---
 
