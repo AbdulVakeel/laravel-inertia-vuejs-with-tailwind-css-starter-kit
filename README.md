@@ -1,6 +1,6 @@
 <div align="center">
 
-## ❤️ Small Request To Developers
+## ❤️ Small Request To Developers 
 
 This project is getting a lot of downloads and clones every day, but very few people are giving it a ⭐ star on GitHub.
 
