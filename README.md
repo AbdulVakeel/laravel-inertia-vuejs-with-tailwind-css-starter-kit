@@ -4,7 +4,7 @@
 
 This project is getting a lot of downloads and clones every day, but very few people are giving it a ⭐ star on GitHub.
 
-If this project saved your time, helped your business, or you learned something from it, please support the project by giving it a star ⭐
+If this project saved your time, helped your business, or you learned something from it, please support the project by giving it a star ⭐ 
 
 Your support motivates me to keep improving this starter kit and release more powerful updates for the community 🚀
 
