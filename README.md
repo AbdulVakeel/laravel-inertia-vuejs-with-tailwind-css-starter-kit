@@ -22,10 +22,6 @@ Your support motivates me to keep improving this starter kit and release more po
 </p>
 
 <p align="center">
-🔴 <a href="https://laravel-inertia-demo.skycodelab.in/login"><b>LIVE DEMO → Click Here</b></a>
-</p>
-
-<p align="center">
 ⭐ <b>If you like this project, please give it a STAR ⭐ on GitHub — it really helps!</b>
 </p>
 
@@ -47,10 +43,6 @@ Your support motivates me to keep improving this starter kit and release more po
 
 <br>
 
-<a href="https://laravel-inertia-demo.skycodelab.in/login" target="_blank" rel="noopener noreferrer">
-<img src="https://skycodelab.in/public/git/logo.png" width="180">
-</a>
-
 <br><br>
 
 <a href="https://www.buymeacoffee.com/abdulvakeel" target="_blank">
@@ -61,11 +53,6 @@ Your support motivates me to keep improving this starter kit and release more po
 
 ---
 
-## 🎥 Demo
-
-<p align="center">
-🔴 <a href="https://laravel-inertia-demo.skycodelab.in/login"><b>LIVE DEMO → Click Here</b></a>
-</p>
 
 <p align="center">
 <img src="https://skycodelab.in/public/git/sky-gif-file.gif" width="700">
